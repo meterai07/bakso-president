@@ -15,6 +15,7 @@
     <body class="antialiased">
         <h1 class="text-3xl underline bg-neutral-600 font-lora">
             Hello semuanya!
+            <!-- Hanip -->
         </h1>
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
