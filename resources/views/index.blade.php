@@ -8,6 +8,7 @@
     @vite('resources/css/app.css')
 </head>
 <body class="font-work-sans">
+    <!-- navbar -->
     <nav id="navbar" class="flex py-4 px-[100px] sticky justify-between items-center duration-500">
         <a class="" href=""><img class = "w-12" src="../assets/img/Logo.svg" alt="Logo PetLife"></a>
         <ul class="flex items-center gap-6">
@@ -21,7 +22,7 @@
             <a class="font-medium text-base w-36 h-12 bg-primary-500 rounded-md text-center py-3 text-neutral-50 hover:bg-yellow-600 hover:duration-500" href="">Order Menu</a>
         </div>
     </nav>
-
+    <!-- head -->
     <div class="flex flex-row items-center h-[90vh] mx-28 justify-between">
         <div class="flex flex-col">
           <h1 class="font-lora font-bold text-6xl mb-4 tracking-wider leading-tight">Where <span class="text-primary-500">Happiness</span>  and <span class="text-primary-500">Meatballs</span> Collide</h1>
@@ -35,6 +36,22 @@
           </div>
         </div>
         <div class="flex object-fill"><img class = "w-[700px]" src="../assets/img/bakso.svg" alt=""></div>
+    </div>
+    <a class="flex flex-col items-center justify-center text-primary-500" href="">
+        <p class="leading-5 font-semibold text-base">Explore</p>
+        <img src="../assets/icons/chevron-down.svg" alt="">
+    </a>
+
+    <!-- about us -->
+    <div class="flex flex-row bg-neutral-700 bg-cover items-center justify-center my-[100px] bg-center" style="background-image: url(../assets/img/about-us-frame.svg)">
+        <div>
+            <img src="../assets/img/about-us-img.svg" alt="">
+        </div>
+        <div class="gap-y-6 py-48">
+            <h3 class="text-neutral-50 font-lora text-2xl leading-8 font-semibold pb-6">About Us</h3>
+            <h2 class="text-neutral-50 font-lora text-5xl font-bold tracking-tight w-[700px] pb-6">Dedicated To Delight <span class="text-primary-500">You The Best Meatball</span></h2>
+            <p class="text-base font-normal text-neutral-50 w-[600px]">Lorem ipsum dolor sit amet consectetur. Cursus enim libero mattis lectus vitae convallis nunc dictum fusce. Est eleifend tristique porta magna ut augue ultricies. Arcu sit eu tellus ac elementum. Nulla dictum arcu enim viverra cursus eu parturient congue. Pharetra cursus nibh vitae maecenas iaculis nunc consectetur ultrices.</p>
+        </div>
     </div>
 </body>
 </html>
