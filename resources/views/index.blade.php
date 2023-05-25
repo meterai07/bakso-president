@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <h1>Galih Tengku</h1>
+    <h1>Galih Alby</h1>
 
     @include('partials.footer')
 </body>
