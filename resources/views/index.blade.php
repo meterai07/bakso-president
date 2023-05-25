@@ -13,15 +13,15 @@
 
     <div class="flex flex-row items-center h-[90vh] mx-28 justify-between">
         <div class="flex flex-col">
-          <h1 class="font-lora font-bold text-6xl mb-4 tracking-wider leading-tight">Where <span class="text-primary-500">Happiness</span>  and <span class="text-primary-500">Meatballs</span> Collide</h1>
-          <h2 class="font-normal text-lg w-[700px] tracking-wider">Lorem ipsum dolor sit amet consectetur. Eget ac mauris morbi elementum placerat vulputate scelerisque nisi et. Duis habitant feugiat leo et cursus nulla mauris.</h2>
-          <div class="flex flex-row pt-10">
+            <h1 class="font-lora font-bold text-6xl mb-4 tracking-wider leading-tight">Where <span class="text-primary-500">Happiness</span>  and <span class="text-primary-500">Meatballs</span> Collide</h1>
+            <h2 class="font-normal text-lg w-[700px] tracking-wider">Lorem ipsum dolor sit amet consectetur. Eget ac mauris morbi elementum placerat vulputate scelerisque nisi et. Duis habitant feugiat leo et cursus nulla mauris.</h2>
+            <div class="flex flex-row pt-10">
             <a class="font-medium text-base  w-36 h-12 bg-primary-500 border border-primary-500 rounded-md text-center py-2 text-neutral-50 hover:bg-primary-600 hover:duration-500" href="">Order Menu</a>
             <a class="flex flex-row items-center ml-6 font-medium text-base w-fit justify-center py-2 px-5 border border-primary-500 rounded-md text-primary-500 hover:bg-primary-600 hover:duration-500" href="">
-              <p class="h-8 pt-[2px] pr-2">See Menu</p> 
-              <img src="../assets/icons/arrow-right.svg" alt="">
+                <p class="h-8 pt-[2px] pr-2">See Menu</p> 
+                <img src="../assets/icons/arrow-right.svg" alt="">
             </a>
-          </div>
+            </div>
         </div>
         <div class="flex object-fill"><img class = "w-[700px]" src="../assets/img/bakso.svg" alt=""></div>
     </div>
@@ -41,8 +41,62 @@
             <p class="text-base font-normal text-neutral-50 w-[600px]">Lorem ipsum dolor sit amet consectetur. Cursus enim libero mattis lectus vitae convallis nunc dictum fusce. Est eleifend tristique porta magna ut augue ultricies. Arcu sit eu tellus ac elementum. Nulla dictum arcu enim viverra cursus eu parturient congue. Pharetra cursus nibh vitae maecenas iaculis nunc consectetur ultrices.</p>
         </div>
     </div>
-
-    <h1>Galih Alby</h1>
+    <div class="flex flex-col items-center justify-center gap-6">
+        <h1 class="font-lora font-semibold text-2xl text-neutral-900">Menu</h1>
+        <h2 class="font-lora font-bold text-4xl ">Our <span class="text-primary-500">Best Seller</span></h2>
+        <div class="flex flex-row items-center gap-6 pt-12">
+            <button class="justify-center p-3 gap-2">
+                <img src="..\assets\img\Button.svg" alt="">
+            </button>
+            <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
+                <img src="..\assets\img\Rectangle 1.svg" alt="">
+                <div class="flex flex-col items-start p-6 gap-4 ">
+                    <div class="flex flex-col item-start gap-2">
+                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
+                        <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    </div>
+                    <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
+                </div>
+            </div>
+            <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
+                <img src="..\assets\img\Rectangle 1.svg" alt="">
+                <div class="flex flex-col items-start p-6 gap-4 ">
+                    <div class="flex flex-col item-start gap-2">
+                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
+                        <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    </div>
+                    <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
+                </div>
+            </div>
+            <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
+                <img src="..\assets\img\Rectangle 1.svg" alt="">
+                <div class="flex flex-col items-start p-6 gap-4 ">
+                    <div class="flex flex-col item-start gap-2">
+                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
+                        <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    </div>
+                    <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
+                </div>
+            </div>
+            <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
+                <img src="..\assets\img\Rectangle 1.svg" alt="">
+                <div class="flex flex-col items-start p-6 gap-4 ">
+                    <div class="flex flex-col item-start gap-2">
+                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
+                        <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    </div>
+                    <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
+                </div>
+            </div>
+            <button class="justify-center p-3 gap-2">
+                <img src="..\assets\img\Button 1.svg" alt="">
+            </button>
+        </div>
+        <button class="flex flex-row justify-center items-center px-3 pt-4 pb-6 gap-2 bg-neutral-50 border-solid border-primary-500  rounded-lg">
+            <h1 class="font-work-sans font-semibold text-base text-primary-500">See More</h1>
+            <img src="..\assets\img\arrow-right.svg" alt="">
+        </button>
+    </div>
 
     @include('partials.footer')
 </body>
