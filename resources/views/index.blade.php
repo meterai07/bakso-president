@@ -41,6 +41,9 @@
             <p class="text-base font-normal text-neutral-50 w-[600px]">Lorem ipsum dolor sit amet consectetur. Cursus enim libero mattis lectus vitae convallis nunc dictum fusce. Est eleifend tristique porta magna ut augue ultricies. Arcu sit eu tellus ac elementum. Nulla dictum arcu enim viverra cursus eu parturient congue. Pharetra cursus nibh vitae maecenas iaculis nunc consectetur ultrices.</p>
         </div>
     </div>
+
+    <h1>Galih</h1>
+
     @include('partials.footer')
 </body>
 </html>
