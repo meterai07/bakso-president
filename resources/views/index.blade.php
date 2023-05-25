@@ -9,20 +9,8 @@
 </head>
 <body class="font-work-sans">
     <!-- navbar -->
-    <nav id="navbar" class="flex py-4 px-[100px] sticky justify-between items-center duration-500">
-        <a class="" href=""><img class = "w-12" src="../assets/img/Logo.svg" alt="Logo PetLife"></a>
-        <ul class="flex items-center gap-6">
-            <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">Home</a></li>
-            <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">About</a></li>
-            <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">Menu</a></li>
-            <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">Outlet</a></li>
-            <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">Contact</a></li>
-        </ul>
-        <div class="flex flex-row justify-center items-center">
-            <a class="font-medium text-base w-36 h-12 bg-primary-500 rounded-md text-center py-3 text-neutral-50 hover:bg-yellow-600 hover:duration-500" href="">Order Menu</a>
-        </div>
-    </nav>
-    <!-- head -->
+    @include('partials.navbar')
+
     <div class="flex flex-row items-center h-[90vh] mx-28 justify-between">
         <div class="flex flex-col">
           <h1 class="font-lora font-bold text-6xl mb-4 tracking-wider leading-tight">Where <span class="text-primary-500">Happiness</span>  and <span class="text-primary-500">Meatballs</span> Collide</h1>
@@ -53,5 +41,6 @@
             <p class="text-base font-normal text-neutral-50 w-[600px]">Lorem ipsum dolor sit amet consectetur. Cursus enim libero mattis lectus vitae convallis nunc dictum fusce. Est eleifend tristique porta magna ut augue ultricies. Arcu sit eu tellus ac elementum. Nulla dictum arcu enim viverra cursus eu parturient congue. Pharetra cursus nibh vitae maecenas iaculis nunc consectetur ultrices.</p>
         </div>
     </div>
+    @include('partials.footer')
 </body>
 </html>
