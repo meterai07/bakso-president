@@ -98,6 +98,7 @@
         </button>
     </div>
 
+    <h1>yes</h1>
     @include('partials.footer')
 </body>
 </html>
