@@ -45,51 +45,53 @@
     <div class="flex flex-col items-center justify-center gap-6">
         <h1 class="font-lora font-semibold text-2xl text-neutral-900">Menu</h1>
         <h2 class="font-lora font-bold text-4xl ">Our <span class="text-primary-500">Best Seller</span></h2>
-        <div class="flex flex-row items-center gap-6 pt-12">
-            <button class="justify-center p-3 gap-2">
+        <div id="carousel-best-seller" class="flex flex-row items-center pt-12 gap-3 overflow-hidden">
+            <button id="carousel-best-seller-prev" class="justify-center p-3 gap-2">
                 <img src="..\assets\img\Button.svg" alt="">
             </button>
-            <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
-                <img src="..\assets\img\Rectangle 1.svg" alt="">
-                <div class="flex flex-col items-start p-6 gap-4 ">
-                    <div class="flex flex-col item-start gap-2">
-                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
-                        <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+            <div id="carousel-best-seller-container" class="flex flex-row gap-6">
+                <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
+                    <img src="..\assets\img\Rectangle 1.svg" alt="">
+                    <div class="flex flex-col items-start p-6 gap-4 ">
+                        <div class="flex flex-col item-start gap-2">
+                            <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
+                            <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                        </div>
+                        <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                     </div>
-                    <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
+                </div>
+                <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
+                    <img src="..\assets\img\Rectangle 1.svg" alt="">
+                    <div class="flex flex-col items-start p-6 gap-4 ">
+                        <div class="flex flex-col item-start gap-2">
+                            <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
+                            <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                        </div>
+                        <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
+                    <img src="..\assets\img\Rectangle 1.svg" alt="">
+                    <div class="flex flex-col items-start p-6 gap-4 ">
+                        <div class="flex flex-col item-start gap-2">
+                            <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
+                            <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                        </div>
+                        <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
+                    <img src="..\assets\img\Rectangle 1.svg" alt="">
+                    <div class="flex flex-col items-start p-6 gap-4 ">
+                        <div class="flex flex-col item-start gap-2">
+                            <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
+                            <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                        </div>
+                        <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
-                <img src="..\assets\img\Rectangle 1.svg" alt="">
-                <div class="flex flex-col items-start p-6 gap-4 ">
-                    <div class="flex flex-col item-start gap-2">
-                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
-                        <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
-                    </div>
-                    <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
-                </div>
-            </div>
-            <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
-                <img src="..\assets\img\Rectangle 1.svg" alt="">
-                <div class="flex flex-col items-start p-6 gap-4 ">
-                    <div class="flex flex-col item-start gap-2">
-                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
-                        <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
-                    </div>
-                    <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
-                </div>
-            </div>
-            <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
-                <img src="..\assets\img\Rectangle 1.svg" alt="">
-                <div class="flex flex-col items-start p-6 gap-4 ">
-                    <div class="flex flex-col item-start gap-2">
-                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Pentil</h1>
-                        <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
-                    </div>
-                    <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
-                </div>
-            </div>
-            <button class="justify-center p-3 gap-2">
+            <button id="carousel-best-seller-next" class="justify-center p-3 gap-2">
                 <img src="..\assets\img\Button 1.svg" alt="">
             </button>
         </div>
@@ -100,7 +102,7 @@
     </div>
 
     <!-- outlets -->
-    <div class="flex flex-col bg-primary-50 bg-cover items-center justify-center my-[100px] bg-center gap-6 py-[80px]">
+    <div class="flex flex-col bg-cover items-center justify-center my-[100px] bg-center gap-6 py-[80px]" style="background-image: url(../assets/img/outlets-bg.svg)">
         <h1 class="font-lora font-semibold text-2xl text-neutral-900">Outlets</h1>
         <h2 class="font-lora font-bold text-4xl ">We Are <span class="text-primary-500">Everywhere</span></h2>
         <div class="flex flex-row items-center gap-6 pt-12">
