@@ -22,10 +22,13 @@
             loop: true,
             slidesPerView: 4,
             spaceBetween: 30,
+            slidesPerGroup: 4,
+            slidesPerColumn: 2,
+            
 
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".button-next",
+            prevEl: ".button-prev",
             hiddenClass: ".swiper-button-hidden",
         },
         });
