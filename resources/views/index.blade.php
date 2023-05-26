@@ -101,7 +101,6 @@
 
     <!-- outlets -->
     <div class="flex flex-col bg-primary-50 bg-cover items-center justify-center my-[100px] bg-center gap-6 py-[80px]">
-        <!-- <img class="z-0 object-cover" src="..\assets\icons\circles.svg" alt=""> -->
         <h1 class="font-lora font-semibold text-2xl text-neutral-900">Outlets</h1>
         <h2 class="font-lora font-bold text-4xl ">We Are <span class="text-primary-500">Everywhere</span></h2>
         <div class="flex flex-row items-center gap-6 pt-12">
@@ -185,6 +184,87 @@
             </div>
         </div>
     </div>
+
+    <!-- Testimonial -->
+    <div class="flex items-center justify-center p-10">
+        <div class="flex flex-col items-center justify-center w-[1224px] gap-6 pt-12 rounded-[48px]" style="background-image: url(../assets/img/testimoni-bg.svg)">
+            <h1 class="font-lora font-semibold text-2xl text-neutral-900">Testimonial</h1>
+            <h2 class="font-lora font-bold text-4xl ">What They Say About <span class="text-neutral-50">Our Recipes</span></h2>
+            <div class="flex flex-row items-center gap-6 pt-12 pb-12">
+                <button class="justify-center p-3 gap-2">
+                    <img src="..\assets\icons\back-button-testimoni.svg" alt="">
+                </button>
+                <div class="flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                    <div class="flex flex-col items-start p-4 gap-2">
+                        <div class="flex flex-col item-start gap-3">
+                            <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
+                            <div class="flex flex-row gap-2">
+                                <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
+                                <div class="flex flex-col gap-[1px] py-[3px]">
+                                    <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                    <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
+                                    <div class="flex flex-row gap-[2px] pt-[2px]">
+                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-3" src="..\assets\icons\star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-neutral-50 rounded-2xl w-[400px]">
+                    <div class="flex flex-col items-start p-6 gap-4">
+                        <div class="flex flex-col item-start gap-6">
+                            <h1 class="font-normal text-base text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
+                            <div class="flex flex-row gap-4">
+                                <img class="flex w-[80px]" src="..\assets\img\person.svg" alt="">
+                                <div class="flex flex-col gap-0.5 py-1.5">
+                                    <h1 class="font-lora font-semibold text-neutral-900 text-xl">Anda Bugis</h1>
+                                    <h2 class="font-normal text-sm text-neutral-900">Selebgram</h2>
+                                    <div class="flex flex-row gap-1 pt-1">
+                                        <img class="w-4" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-4" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-4" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-4" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-4" src="..\assets\icons\star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                    <div class="flex flex-col items-start p-4 gap-2">
+                        <div class="flex flex-col item-start gap-3">
+                            <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
+                            <div class="flex flex-row gap-2">
+                                <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
+                                <div class="flex flex-col gap-[1px] py-[3px]">
+                                    <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                    <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
+                                    <div class="flex flex-row gap-[2px] pt-[2px]">
+                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                        <img class="w-3" src="..\assets\icons\star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="justify-center p-3 gap-2">
+                    <img src="..\assets\icons\next-button-testimoni.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
     @include('partials.footer')
 </body>
 </html>
