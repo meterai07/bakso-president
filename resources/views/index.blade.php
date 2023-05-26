@@ -45,7 +45,7 @@
     <div class="flex flex-col items-center justify-center gap-6">
         <h1 class="font-lora font-semibold text-2xl text-neutral-900">Menu</h1>
         <h2 class="font-lora font-bold text-4xl ">Our <span class="text-primary-500">Best Seller</span></h2>
-        <div id="carousel-best-seller" class="flex flex-row items-center pt-12 gap-3 overflow-hidden">
+        <div id="carousel-best-seller" class="flex flex-row items-center pt-12 gap-3">
             <button id="carousel-best-seller-prev" class="justify-center p-3 gap-2">
                 <img src="..\assets\img\Button.svg" alt="">
             </button>
