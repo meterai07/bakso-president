@@ -21,7 +21,7 @@ use App\Http\Controllers\IndexController;
 
 Route::get('/', [IndexController::class, 'index']);
 
-Route::get('/admin', [AdminController::class, 'index']);
-Route::post('/admin/login', [AdminController::class, 'login']);
-Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->middleware('auth');
-Route::get('/admin/logout', [AdminController::class, 'logout']);
+Route::get('/admin', [AdminController::class, 'index'])->middleware('guest');
+Route::post('/admin', [AdminController::class, 'login']);
+Route::get('/admin/logout', [AdminController::class, 'logout'])->middleware('auth');
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard']);

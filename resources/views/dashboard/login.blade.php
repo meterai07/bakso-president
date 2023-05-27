@@ -4,7 +4,7 @@
 
 @section('content')
 
-<form action="/admin/login" method="post">
+<form action="/admin" method="post">
     @csrf
     <div class="flex flex-col items-center justify-center h-screen">
         <div class="flex flex-col items-center justify-center w-96 bg-white rounded-lg shadow-lg">
