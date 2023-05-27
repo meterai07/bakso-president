@@ -318,7 +318,7 @@
             <h1 class="font-lora font-semibold text-2xl text-neutral-900">Testimonial</h1>
             <h2 class="font-lora font-bold text-4xl ">What They Say About <span class="text-neutral-50">Our Recipes</span></h2>
             <div class="flex flex-row pt-4 justify-center items-center ">
-                <img onclick="opacityPrev()" class="button-prev h-max px-4 bg-cover" src="../assets/img/prev-button.svg" alt="">
+                <img onclick="opacityPrev()" class="button-prev2 h-max px-4 bg-cover" src="../assets/icons/back-button-testimoni.svg" alt="">
                 <div class="flex flex-row swiper mySwiper2 w-[1000px]">
                     <div class="swiper-wrapper">
                         <div id="ts-sw-0" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
@@ -449,7 +449,7 @@
                         </div>
                     </div>
                 </div>
-                <img onclick="opacityNext()" class="button-next px-4 h-max bg-cover" src="../assets/img/next-button.svg" alt="">
+                <img onclick="opacityNext()" class="button-next2 px-4 h-max bg-cover" src="../assets/icons/next-button-testimoni.svg" alt="">
             </div>
         </div>
     </div>

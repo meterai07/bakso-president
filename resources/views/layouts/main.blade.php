@@ -42,9 +42,9 @@
             
 
         navigation: {
-            nextEl: ".button-next",
-            prevEl: ".button-prev",
-            hiddenClass: ".swiper-button-hidden",
+            nextEl: ".button-next2",
+            prevEl: ".button-prev2",
+            hiddenClass: ".swiper-button-hidden2",
         },
         });
     </script>
