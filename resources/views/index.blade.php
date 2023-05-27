@@ -24,14 +24,30 @@
     </a>
 
     <!-- about us -->
-    <div class="flex flex-row bg-neutral-700 bg-cover items-center justify-center my-[100px] bg-center" style="background-image: url(../assets/img/about-us-frame.svg)">
+    <div class="flex flex-row bg-neutral-700 bg-cover items-center justify-center my-[100px] bg-center gap-20 py-24" style="background-image: url(../assets/img/about-us-frame.svg)">
         <div>
             <img src="../assets/img/about-us-img.svg" alt="">
         </div>
-        <div class="gap-y-6 py-48">
-            <h3 class="text-neutral-50 font-lora text-2xl leading-8 font-semibold pb-6">About Us</h3>
-            <h2 class="text-neutral-50 font-lora text-5xl font-bold tracking-tight w-[700px] pb-6">Dedicated To Delight <span class="text-primary-500">You The Best Meatball</span></h2>
+        <div class="flex flex-col gap-y-6">
+            <h3 class="text-neutral-50 font-lora text-2xl leading-8 font-semibold">About Us</h3>
+            <h2 class="text-neutral-50 font-lora text-5xl font-bold tracking-tight w-[700px]">Dedicated To Delight <span class="text-primary-500">You The Best Meatball</span></h2>
             <p class="text-base font-normal text-neutral-50 w-[600px]">Lorem ipsum dolor sit amet consectetur. Cursus enim libero mattis lectus vitae convallis nunc dictum fusce. Est eleifend tristique porta magna ut augue ultricies. Arcu sit eu tellus ac elementum. Nulla dictum arcu enim viverra cursus eu parturient congue. Pharetra cursus nibh vitae maecenas iaculis nunc consectetur ultrices.</p>
+            <div class="flex flex-row pt-6">
+                <div class="flex flex-col justify-center items-center w-[200px] gap-2">
+                    <h1 class="font-lora font-bold text-5xl text-primary-500">40+</h1>
+                    <p class="font-normal text-base text-neutral-50">Years of Experience</p>
+                </div>
+                <img src="../assets/icons/line.svg" alt="">
+                <div class="flex flex-col justify-center items-center w-[200px] gap-2">
+                    <h1 class="font-lora font-bold text-5xl text-primary-500">4.0+</h1>
+                    <p class="font-normal text-base text-neutral-50">Good Reviews</p>
+                </div>
+                <img src="../assets/icons/line.svg" alt="">
+                <div class="flex flex-col justify-center items-center w-[200px] gap-2">
+                    <h1 class="font-lora font-bold text-5xl text-primary-500">20.000+</h1>
+                    <p class="font-normal text-base text-neutral-50">Happy Customers</p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Best Seller -->
@@ -236,84 +252,6 @@
 
     <!-- Testimonial -->
     <div class="flex items-center justify-center p-10">
-        <!-- <div class="flex flex-col items-center justify-center w-[1224px] gap-6 pt-12 rounded-[48px]" style="background-image: url(../assets/img/testimoni-bg.svg)">
-            <h1 class="font-lora font-semibold text-2xl text-neutral-900">Testimonial</h1>
-            <h2 class="font-lora font-bold text-4xl ">What They Say About <span class="text-neutral-50">Our Recipes</span></h2>
-            <div class="flex flex-row items-center gap-6 pt-12 pb-12">
-                <button class="justify-center p-3 gap-2">
-                    <img src="..\assets\icons\back-button-testimoni.svg" alt="">
-                </button>
-                <div class="flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
-                    <div class="flex flex-col items-start p-4 gap-2">
-                        <div class="flex flex-col item-start gap-3">
-                            <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
-                            <div class="flex flex-row gap-2">
-                                <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
-                                <div class="flex flex-col gap-[1px] py-[3px]">
-                                    <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
-                                    <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
-                                    <div class="flex flex-row gap-[2px] pt-[2px]">
-                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-3" src="..\assets\icons\star.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col bg-neutral-50 rounded-2xl w-[400px]">
-                    <div class="flex flex-col items-start p-6 gap-4">
-                        <div class="flex flex-col item-start gap-6">
-                            <h1 class="font-normal text-base text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
-                            <div class="flex flex-row gap-4">
-                                <img class="flex w-[80px]" src="..\assets\img\person.svg" alt="">
-                                <div class="flex flex-col gap-0.5 py-1.5">
-                                    <h1 class="font-lora font-semibold text-neutral-900 text-xl">Anda Bugis</h1>
-                                    <h2 class="font-normal text-sm text-neutral-900">Selebgram</h2>
-                                    <div class="flex flex-row gap-1 pt-1">
-                                        <img class="w-4" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-4" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-4" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-4" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-4" src="..\assets\icons\star.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
-                    <div class="flex flex-col items-start p-4 gap-2">
-                        <div class="flex flex-col item-start gap-3">
-                            <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
-                            <div class="flex flex-row gap-2">
-                                <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
-                                <div class="flex flex-col gap-[1px] py-[3px]">
-                                    <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
-                                    <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
-                                    <div class="flex flex-row gap-[2px] pt-[2px]">
-                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
-                                        <img class="w-3" src="..\assets\icons\star.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="justify-center p-3 gap-2">
-                    <img src="..\assets\icons\next-button-testimoni.svg" alt="">
-                </button>
-            </div>
-        </div> -->
-
-        <!-- Testimonial-swiper -->
-
         <div class="flex flex-col items-center justify-center w-[1223px] gap-6 py-12 rounded-[48px]" style="background-image: url(../assets/img/testimoni-bg.svg)">
             <h1 class="font-lora font-semibold text-2xl text-neutral-900">Testimonial</h1>
             <h2 class="font-lora font-bold text-4xl ">What They Say About <span class="text-neutral-50">Our Recipes</span></h2>
