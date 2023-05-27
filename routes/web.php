@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\MenuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,4 @@ Route::post('/admin', [AdminController::class, 'login']);
 Route::get('/admin/logout', [AdminController::class, 'logout'])->middleware('auth');
 
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->middleware('auth');
+Route::get('/admin/menu', [MenuController::class, 'index'])->middleware('auth');

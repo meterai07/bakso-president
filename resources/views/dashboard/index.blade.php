@@ -8,6 +8,10 @@
 </head>
 <body>
     <h1>Berhasil Masuk</h1>
-    <a href="/admin/logout">keluar disini</a>
+    <p>Hello, {{ auth()->user()->name }}</p>
+
+    <a href="/admin/menu">Menu</a>
+
+    <a href="/admin/logout">Logout</a>
 </body>
 </html>
