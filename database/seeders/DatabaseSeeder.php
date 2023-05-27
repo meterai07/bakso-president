@@ -25,5 +25,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'testing@gmail.com',
             'password' => bcrypt('password'),
         ]);
+
+        $this->call([
+            MenuSeeder::class,
+        ]);
     }
 }
