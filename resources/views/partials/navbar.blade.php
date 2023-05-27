@@ -1,7 +1,7 @@
 <nav id="navbar" class="flex py-4 px-[100px] sticky justify-between items-center duration-500">
-    <a class="" href=""><img class = "w-40" src="../assets/icons/Logo-Bakso.png"></a>
+    <a href="/"><img class = "w-40" src="../assets/icons/Logo-Bakso.png"></a>
     <ul class="flex items-center gap-6">
-        <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">Home</a></li>
+        <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="/">Home</a></li>
         <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">About</a></li>
         <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">Menu</a></li>
         <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">Outlet</a></li>
