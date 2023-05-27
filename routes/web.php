@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [IndexController::class, 'index']);
+
+Route::get('/admin', [AdminController::class, 'index']);
+Route::post('/admin/login', [AdminController::class, 'login']);
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->middleware('auth');
+Route::get('/admin/logout', [AdminController::class, 'logout']);
