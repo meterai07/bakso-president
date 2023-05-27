@@ -37,8 +37,8 @@
             loop: true,
             slidesPerView: 3,
             spaceBetween: 30,
-            slidesPerGroup: 3,
-            slidesPerColumn: 2,
+            slidesPerGroup: 1,
+            slidesPerColumn: 1,
             
 
         navigation: {

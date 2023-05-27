@@ -318,10 +318,10 @@
             <h1 class="font-lora font-semibold text-2xl text-neutral-900">Testimonial</h1>
             <h2 class="font-lora font-bold text-4xl ">What They Say About <span class="text-neutral-50">Our Recipes</span></h2>
             <div class="flex flex-row pt-4 justify-center items-center ">
-                <img class="button-prev h-max px-4 bg-cover" src="../assets/img/prev-button.svg" alt="">
+                <img onclick="opacityPrev()" class="button-prev h-max px-4 bg-cover" src="../assets/img/prev-button.svg" alt="">
                 <div class="flex flex-row swiper mySwiper2 w-[1000px]">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                        <div id="ts-sw-0" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -342,7 +342,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px]">
+                        <div id="ts-sw-1" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px]">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -363,7 +363,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                        <div id="ts-sw-2" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -384,7 +384,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                        <div id="ts-sw-3" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -405,7 +405,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px]">
+                        <div id="ts-sw-4" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -426,7 +426,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                        <div id="ts-sw-5" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -449,8 +449,28 @@
                         </div>
                     </div>
                 </div>
-                <img class="button-next px-4 h-max bg-cover" src="../assets/img/next-button.svg" alt="">
+                <img onclick="opacityNext()" class="button-next px-4 h-max bg-cover" src="../assets/img/next-button.svg" alt="">
             </div>
         </div>
     </div>
 @endsection
+
+<script>
+
+    let c = 1;
+
+    function opacityNext() {
+        document.getElementById("ts-sw-" + c).style.opacity = 0.8;
+        c = c + 1;
+        if (c== 6) c = 0;
+        document.getElementById("ts-sw-" + c).style.opacity = 1;
+
+    }
+
+    function opacityPrev() {
+        document.getElementById("ts-sw-" + c).style.opacity = 0.8;
+        c = c - 1;
+        if (c== -1) c = 5;
+        document.getElementById("ts-sw-" + c).style.opacity = 1;
+    }
+</script>
