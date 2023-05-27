@@ -32,6 +32,21 @@
             hiddenClass: ".swiper-button-hidden",
         },
         });
+
+        let swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            slidesPerColumn: 2,
+            
+
+        navigation: {
+            nextEl: ".button-next",
+            prevEl: ".button-prev",
+            hiddenClass: ".swiper-button-hidden",
+        },
+        });
     </script>
 </body>
 </html>

@@ -42,102 +42,102 @@
             <img class="button-prev px-6 pb-2 h-max bg-cover" src="../assets/img/prev-button.svg" alt="">
             <div class="flex flex-row swiper mySwiper w-[1400px]">
                 <div class="swiper-wrapper pb-10">
-                <div class="swiper-slide">
-                    <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                        <img src="..\assets\img\Rectangle 1.svg" alt="">
-                        <div class="flex flex-col items-start p-6 gap-4 ">
-                            <div class="flex flex-col item-start gap-2">
-                                <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 1</h1>
-                                <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
+                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <div class="flex flex-col items-start p-6 gap-4 ">
+                                <div class="flex flex-col item-start gap-2">
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 1</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                </div>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
-                            <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                        <img src="..\assets\img\Rectangle 1.svg" alt="">
-                        <div class="flex flex-col items-start p-6 gap-4 ">
-                            <div class="flex flex-col item-start gap-2">
-                                <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 2</h1>
-                                <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
+                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <div class="flex flex-col items-start p-6 gap-4 ">
+                                <div class="flex flex-col item-start gap-2">
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 2</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                </div>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
-                            <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                        <img src="..\assets\img\Rectangle 1.svg" alt="">
-                        <div class="flex flex-col items-start p-6 gap-4 ">
-                            <div class="flex flex-col item-start gap-2">
-                                <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 3</h1>
-                                <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
+                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <div class="flex flex-col items-start p-6 gap-4 ">
+                                <div class="flex flex-col item-start gap-2">
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 3</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                </div>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
-                            <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                        <img src="..\assets\img\Rectangle 1.svg" alt="">
-                        <div class="flex flex-col items-start p-6 gap-4 ">
-                            <div class="flex flex-col item-start gap-2">
-                                <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 4</h1>
-                                <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
+                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <div class="flex flex-col items-start p-6 gap-4 ">
+                                <div class="flex flex-col item-start gap-2">
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 4</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                </div>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
-                            <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                        <img src="..\assets\img\Rectangle 1.svg" alt="">
-                        <div class="flex flex-col items-start p-6 gap-4 ">
-                            <div class="flex flex-col item-start gap-2">
-                                <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 5</h1>
-                                <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
+                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <div class="flex flex-col items-start p-6 gap-4 ">
+                                <div class="flex flex-col item-start gap-2">
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 5</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                </div>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
-                            <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                        <img src="..\assets\img\Rectangle 1.svg" alt="">
-                        <div class="flex flex-col items-start p-6 gap-4 ">
-                            <div class="flex flex-col item-start gap-2">
-                                <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 6</h1>
-                                <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
+                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <div class="flex flex-col items-start p-6 gap-4 ">
+                                <div class="flex flex-col item-start gap-2">
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 6</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                </div>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
-                            <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                        <img src="..\assets\img\Rectangle 1.svg" alt="">
-                        <div class="flex flex-col items-start p-6 gap-4 ">
-                            <div class="flex flex-col item-start gap-2">
-                                <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 7</h1>
-                                <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
+                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <div class="flex flex-col items-start p-6 gap-4 ">
+                                <div class="flex flex-col item-start gap-2">
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 7</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                </div>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
-                            <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                        <img src="..\assets\img\Rectangle 1.svg" alt="">
-                        <div class="flex flex-col items-start p-6 gap-4 ">
-                            <div class="flex flex-col item-start gap-2">
-                                <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 8</h1>
-                                <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
+                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <div class="flex flex-col items-start p-6 gap-4 ">
+                                <div class="flex flex-col item-start gap-2">
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 8</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                </div>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
-                            <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
             <img class="button-next px-6 h-max pb-2 bg-cover" src="../assets/img/next-button.svg" alt="">
@@ -236,7 +236,7 @@
 
     <!-- Testimonial -->
     <div class="flex items-center justify-center p-10">
-        <div class="flex flex-col items-center justify-center w-[1224px] gap-6 pt-12 rounded-[48px]" style="background-image: url(../assets/img/testimoni-bg.svg)">
+        <!-- <div class="flex flex-col items-center justify-center w-[1224px] gap-6 pt-12 rounded-[48px]" style="background-image: url(../assets/img/testimoni-bg.svg)">
             <h1 class="font-lora font-semibold text-2xl text-neutral-900">Testimonial</h1>
             <h2 class="font-lora font-bold text-4xl ">What They Say About <span class="text-neutral-50">Our Recipes</span></h2>
             <div class="flex flex-row items-center gap-6 pt-12 pb-12">
@@ -309,6 +309,147 @@
                 <button class="justify-center p-3 gap-2">
                     <img src="..\assets\icons\next-button-testimoni.svg" alt="">
                 </button>
+            </div>
+        </div> -->
+
+        <!-- Testimonial-swiper -->
+
+        <div class="flex flex-col items-center justify-center w-[1223px] gap-6 py-12 rounded-[48px]" style="background-image: url(../assets/img/testimoni-bg.svg)">
+            <h1 class="font-lora font-semibold text-2xl text-neutral-900">Testimonial</h1>
+            <h2 class="font-lora font-bold text-4xl ">What They Say About <span class="text-neutral-50">Our Recipes</span></h2>
+            <div class="flex flex-row pt-4 justify-center items-center ">
+                <img class="button-prev h-max px-4 bg-cover" src="../assets/img/prev-button.svg" alt="">
+                <div class="flex flex-row swiper mySwiper2 w-[1000px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                            <div class="flex flex-col items-start p-4 gap-2">
+                                <div class="flex flex-col item-start gap-3">
+                                    <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
+                                    <div class="flex flex-row gap-2">
+                                        <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
+                                        <div class="flex flex-col gap-[1px] py-[3px]">
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
+                                            <div class="flex flex-row gap-[2px] pt-[2px]">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\star.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px]">
+                            <div class="flex flex-col items-start p-4 gap-2">
+                                <div class="flex flex-col item-start gap-3">
+                                    <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
+                                    <div class="flex flex-row gap-2">
+                                        <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
+                                        <div class="flex flex-col gap-[1px] py-[3px]">
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
+                                            <div class="flex flex-row gap-[2px] pt-[2px]">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\star.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                            <div class="flex flex-col items-start p-4 gap-2">
+                                <div class="flex flex-col item-start gap-3">
+                                    <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
+                                    <div class="flex flex-row gap-2">
+                                        <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
+                                        <div class="flex flex-col gap-[1px] py-[3px]">
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
+                                            <div class="flex flex-row gap-[2px] pt-[2px]">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\star.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                            <div class="flex flex-col items-start p-4 gap-2">
+                                <div class="flex flex-col item-start gap-3">
+                                    <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
+                                    <div class="flex flex-row gap-2">
+                                        <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
+                                        <div class="flex flex-col gap-[1px] py-[3px]">
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
+                                            <div class="flex flex-row gap-[2px] pt-[2px]">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\star.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px]">
+                            <div class="flex flex-col items-start p-4 gap-2">
+                                <div class="flex flex-col item-start gap-3">
+                                    <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
+                                    <div class="flex flex-row gap-2">
+                                        <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
+                                        <div class="flex flex-col gap-[1px] py-[3px]">
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
+                                            <div class="flex flex-row gap-[2px] pt-[2px]">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\star.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                            <div class="flex flex-col items-start p-4 gap-2">
+                                <div class="flex flex-col item-start gap-3">
+                                    <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
+                                    <div class="flex flex-row gap-2">
+                                        <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
+                                        <div class="flex flex-col gap-[1px] py-[3px]">
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
+                                            <div class="flex flex-row gap-[2px] pt-[2px]">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
+                                                <img class="w-3" src="..\assets\icons\star.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="button-next px-4 h-max bg-cover" src="../assets/img/next-button.svg" alt="">
             </div>
         </div>
     </div>
