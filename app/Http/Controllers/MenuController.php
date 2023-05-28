@@ -13,7 +13,7 @@ class MenuController extends Controller
     public function index()
     {
         $menus = Menu::all();
-        return view('dashboard.menu', [
+        return view('dashboard.menu.menu', [
             'menus' => $menus,
         ]);
     }
@@ -23,7 +23,7 @@ class MenuController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.menu.menu-create');
     }
 
     /**

@@ -9,11 +9,14 @@
 <body>
     <a href="/admin/dashboard">kembali</a>
     {{-- nanti disini ada menu crud, upload image, dan lain-lain --}}
+    <h1>Halaman Menus</h1>
+    <a href="/admin/menu/create">Tambah Menu</a>
+
     @foreach ($menus as $menu)
         <h1>{{ $menu->name }}</h1>
         <p>{{ $menu->description }}</p>
         <p>{{ $menu->price }}</p>
-        <p>{{ $menu->image }}</p>   
+        <p>{{ $menu->image }}</p>  
     @endforeach
 </body>
 </html>

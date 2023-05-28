@@ -27,4 +27,6 @@ Route::post('/admin', [AdminController::class, 'login']);
 Route::get('/admin/logout', [AdminController::class, 'logout'])->middleware('auth');
 
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->middleware('auth');
+
 Route::get('/admin/menu', [MenuController::class, 'index'])->middleware('auth');
+Route::get('/admin/menu/create', [MenuController::class, 'create'])->middleware('auth');
