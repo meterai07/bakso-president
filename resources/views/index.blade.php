@@ -4,6 +4,9 @@
 
 @section('content')
     <!-- Hero -->
+    <div class="absolute items-start justify-start -z-10 opacity-10">
+        <img class="" src="../assets/img/header-bg.svg" alt="">
+    </div>
     <div class="flex flex-row items-center h-[90vh] mx-28 justify-between">
         <div class="flex flex-col">
             <h1 class="font-lora font-bold text-6xl mb-4 tracking-wider leading-tight">Where <span class="text-primary-500">Happiness</span>  and <span class="text-primary-500">Meatballs</span> Collide</h1>
@@ -411,4 +414,19 @@
         if (c== -1) c = 5;
         document.getElementById("ts-sw-" + c).style.opacity = 1;
     }
+
+    // navbar scroll
+    let prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
 </script>

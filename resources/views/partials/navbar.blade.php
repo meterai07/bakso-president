@@ -1,6 +1,6 @@
-<nav id="navbar" class="flex py-4 px-[100px] sticky justify-between items-center duration-500">
+<nav id="navbar" class="flex my-4 px-[100px] sticky justify-between items-center duration-500 bg-transparent">
     <a href="/"><img class = "w-40" src="../assets/icons/Logo-Bakso.png"></a>
-    <ul class="flex items-center gap-6">
+    <ul class="flex items-center gap-6 bg-transparent">
         <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="/">Home</a></li>
         <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">About</a></li>
         <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="">Menu</a></li>
@@ -11,3 +11,18 @@
         <a class="font-medium text-base w-36 h-12 bg-primary-500 rounded-md text-center py-3 text-neutral-50 hover:bg-yellow-600 hover:duration-500" href="">Order Menu</a>
     </div>
 </nav>
+
+<script>
+    let prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
