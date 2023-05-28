@@ -31,7 +31,20 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'required',
+            'price' => 'required|numeric',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
+        ]);
+
+        if ($request->hasFile('image')) {
+            $validated['image'] = $request->file('image')->store('menu-images');
+        }
+
+        Menu::create($validated);
+
+        return redirect('/admin/menu')->with('success', 'Menu item is successfully saved');
     }
 
     /**

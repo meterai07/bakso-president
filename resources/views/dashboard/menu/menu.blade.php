@@ -12,11 +12,18 @@
     <h1>Halaman Menus</h1>
     <a href="/admin/menu/create">Tambah Menu</a>
 
+    @if(session('success'))
+    <div class="flex items-center justify-center w-full p-4 mb-4 text-green-500 bg-green-100 rounded-lg">
+        {{ session('success') }}
+    </div>
+    @endif
+
     @foreach ($menus as $menu)
         <h1>{{ $menu->name }}</h1>
         <p>{{ $menu->description }}</p>
         <p>{{ $menu->price }}</p>
-        <p>{{ $menu->image }}</p>  
+        <p>{{ $menu->image }}</p> 
+        <img src="{{ asset('storage/' . $menu->image) }}" alt="{{ $menu->name }}" width="200">
     @endforeach
 </body>
 </html>
