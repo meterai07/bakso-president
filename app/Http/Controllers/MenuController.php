@@ -60,7 +60,9 @@ class MenuController extends Controller
      */
     public function edit(Menu $menu)
     {
-        //
+        return view('dashboard.menu.menu-update', [
+            'menu' => $menu,
+        ]);
     }
 
     /**
@@ -68,7 +70,20 @@ class MenuController extends Controller
      */
     public function update(Request $request, Menu $menu)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'required',
+            'price' => 'required|numeric',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
+        ]);
+
+        if ($request->hasFile('image')) {
+            $validated['image'] = $request->file('image')->store('menu-images');
+        }
+
+        $menu->update($validated);
+
+        return redirect('/admin/menu')->with('success', 'Menu item is successfully updated');
     }
 
     /**
