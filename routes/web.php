@@ -22,6 +22,8 @@ use App\Http\Controllers\MenuController;
 
 Route::get('/', [IndexController::class, 'index']);
 
+Route::get('/order', [IndexController::class, 'order']);
+
 Route::get('/admin', [AdminController::class, 'index'])->middleware('guest');
 Route::post('/admin', [AdminController::class, 'login']);
 Route::get('/admin/logout', [AdminController::class, 'logout'])->middleware('auth');
