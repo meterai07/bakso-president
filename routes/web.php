@@ -26,22 +26,22 @@ Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/order', [OrderMenuController::class, 'index']);
 
-Route::get('/admin', [AdminController::class, 'index']);
-Route::post('/admin', [AdminController::class, 'login']);
-
-Route::middleware(['auth'])->group(function() {
-    Route::prefix('admin')->group(function() {
+Route::prefix('admin')->group(function() {
+    Route::get('/', [AdminController::class, 'index']);
+    Route::post('/', [AdminController::class, 'login']);
+    
+    Route::middleware(['auth'])->group(function() {
         Route::get('/logout', [AdminController::class, 'logout']);
-
+        
         Route::get('/dashboard', [AdminController::class, 'dashboard']);
-
+        
         Route::get('/menu', [MenuController::class, 'index']);
         Route::get('/menu/create', [MenuController::class, 'create']);
         Route::post('/menu/create', [MenuController::class, 'store']);
         Route::get('/menu/update/{menu:id}', [MenuController::class, 'edit']);
         Route::post('/menu/update/{menu:id}', [MenuController::class, 'update']);
         Route::get('/menu/delete/{menu:id}', [MenuController::class, 'destroy']);
-
+        
         Route::get('/categories', [CategoryController::class, 'index']);
         Route::get('/categories/create', [CategoryController::class, 'create']);
         Route::post('/categories/create', [CategoryController::class, 'store']);
