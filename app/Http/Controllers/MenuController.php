@@ -34,8 +34,8 @@ class MenuController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|max:255',
-            'description' => 'required',
-            'price' => 'required|numeric',
+            'description' => 'required|max:255',
+            'price' => 'required|numeric|min:0',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
@@ -43,9 +43,11 @@ class MenuController extends Controller
             $validated['image'] = $request->file('image')->store('menu-images');
         }
 
-        Menu::create($validated);
+        if (Menu::create($validated)) {
+            return redirect('/admin/menu')->with('success', 'Menu item is successfully saved');
+        }
 
-        return redirect('/admin/menu')->with('success', 'Menu item is successfully saved');
+        return redirect('/admin/menu')->with('error', 'Menu item is failed to save');
     }
 
     /**
@@ -77,18 +79,24 @@ class MenuController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|max:255',
-            'description' => 'required',
-            'price' => 'required|numeric',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
+            'description' => 'required|max:255',
+            'price' => 'required|numeric|min:0',
+            'image' => 'image|mimes:jpeg,png,jpg,svg',
         ]);
 
         if ($request->hasFile('image')) {
             $validated['image'] = $request->file('image')->store('menu-images');
         }
 
-        $menu->update($validated);
+        if ($menu->update($validated)) {
+            return redirect('/admin/menu')->with('success', 'Menu item is successfully updated');
+        }
 
-        return redirect('/admin/menu')->with('success', 'Menu item is successfully updated');
+        return redirect('/admin/menu')->with('error', 'Menu item is failed to update');
+
+        // $menu->update($validated);
+
+        // return redirect('/admin/menu')->with('success', 'Menu item is successfully updated');
     }
 
     /**

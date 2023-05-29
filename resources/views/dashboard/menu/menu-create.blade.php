@@ -11,6 +11,7 @@
         <input type="file" name="image" id="image" placeholder="Gambar Menu">
         <button type="submit">Tambah Menu</button>
     </form> --}}
+    <a href="/admin/menu" class="text-blue-500 hover:text-blue-700">Kembali ke halaman menu</a>
     <div class="flex items-center justify-center w-full min-h-screen">
     <form action="/admin/menu/create" method="post" enctype="multipart/form-data" class="w-full max-w-sm mx-auto">
         @csrf
