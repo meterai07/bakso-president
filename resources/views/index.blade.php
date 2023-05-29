@@ -176,7 +176,7 @@
                 <img src="..\assets\img\Rectangle 1.svg" alt="">
                 <div class="flex flex-col items-start p-6">
                     <div class="flex flex-col item-start gap-y-6">
-                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso President Batanghari</h1>
+                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso President Pulosari</h1>
                         <div class="flex flex-col gap-y-4">
                             <div class="flex flex-row font-normal text-base text-neutral-600 gap-3 items-start justify-start">
                                 <img class="pt-[1px] w-5" src="..\assets\icons\pin.svg" alt="">
@@ -193,8 +193,8 @@
                         </div>
                         <a href="" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
                             <img src="..\assets\icons\way.svg" alt="">
-                            <a class="font-medium text-base text-center text-neutral-50" href="">Petunjuk Arah</a>
-                        </div>
+                            <p class="font-medium text-base text-center text-neutral-50">Petunjuk Arah</p>
+                        </a>
                     </div>
                 </div>
             </div>
