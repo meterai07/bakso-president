@@ -7,5 +7,5 @@
         <a href="" class="text-base font-medium">Order</a>
         <a href="" class="text-base font-medium">Testimoni</a>
     </div>
-    <a href="" class="bg-primary-500 text-neutral-50 text-base font-semibold py-3 px-6 rounded-lg ">Order Menu</a>
+    <img src="../assets/icons/shopping-cart.svg" alt="Cart">
 </nav>

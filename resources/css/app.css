@@ -6,6 +6,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+
 .swiper-button-next::after {
   display: none;
 }

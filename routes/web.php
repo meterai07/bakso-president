@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\OrderMenuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,7 @@ use App\Http\Controllers\MenuController;
 
 Route::get('/', [IndexController::class, 'index']);
 
-Route::get('/order', [IndexController::class, 'order']);
+Route::get('/order', [OrderMenuController::class, 'index']);
 
 Route::get('/admin', [AdminController::class, 'index'])->middleware('guest');
 Route::post('/admin', [AdminController::class, 'login']);
