@@ -1,6 +1,6 @@
-@extends('layouts.main')
+@extends('dashboard.layouts.main')
 
-@section('title', 'Login Admin')
+@section('title', ' Login')
 
 @section('content')
 

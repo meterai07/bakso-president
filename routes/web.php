@@ -35,3 +35,4 @@ Route::get('/admin/menu/create', [MenuController::class, 'create'])->middleware(
 Route::post('/admin/menu/create', [MenuController::class, 'store'])->middleware('auth');
 Route::get('/admin/menu/update/{menu:id}', [MenuController::class, 'edit'])->middleware('auth');
 Route::post('/admin/menu/update/{menu:id}', [MenuController::class, 'update'])->middleware('auth');
+Route::get('/admin/menu/delete/{menu:id}', [MenuController::class, 'destroy'])->middleware('auth');
