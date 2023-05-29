@@ -21,7 +21,7 @@
         </div>
         <div class="flex object-fill"><img class = "w-[700px]" src="../assets/img/bakso.svg" alt=""></div>
     </div>
-    <a class="flex flex-col items-center justify-center text-primary-500" href="">
+    <a class="flex flex-col items-center text-primary-500" href="">
         <p class="leading-5 font-semibold text-base">Explore</p>
         <img src="../assets/icons/chevron-down.svg" alt="">
     </a>
@@ -191,10 +191,10 @@
                                 <p class="w-[300px]">08.00 - 21.30 WIB (Setiap Hari) </p>
                             </div>
                         </div>
-                        <div class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
+                        <a href="" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
                             <img src="..\assets\icons\way.svg" alt="">
-                            <a class="font-medium text-base text-center text-neutral-50" href="">Petunjuk Arah</a>
-                        </div>
+                            <p class="font-medium text-base text-center text-neutral-50">Petunjuk Arah</p>  
+                        </a>
                     </div>
                 </div>
             </div>
@@ -217,10 +217,10 @@
                                 <p class="w-[300px]">08.00 - 21.30 WIB (Setiap Hari) </p>
                             </div>
                         </div>
-                        <div class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
+                        <a href="" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
                             <img src="..\assets\icons\way.svg" alt="">
-                            <a class="font-medium text-base text-center text-neutral-50" href="">Petunjuk Arah</a>
-                        </div>
+                            <p class="font-medium text-base text-center text-neutral-50">Petunjuk Arah</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -243,10 +243,10 @@
                                 <p class="w-[300px]">08.00 - 21.30 WIB (Setiap Hari) </p>
                             </div>
                         </div>
-                        <div class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
+                        <a href="" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
                             <img src="..\assets\icons\way.svg" alt="">
-                            <a class="font-medium text-base text-center text-neutral-50" href="">Petunjuk Arah</a>
-                        </div>
+                            <p class="font-medium text-base text-center text-neutral-50">Petunjuk Arah</p>
+                        </a>
                     </div>
                 </div>
             </div>
