@@ -13,16 +13,13 @@
                 <h1 class="text-3xl font-extrabold text-neutral-900 font-lora">Login Admin</h1>
             </div>
 
-            @if(session('error'))
-            <div class="flex items-center justify-center w-full p-4 mb-4 text-red-500 bg-red-100 rounded-lg">
-                {{ session('error') }}
-            </div>
-            @endif
-
             <div class="flex flex-col w-full p-6 space-y-6">
                 <input type="email" name="email" id="email" placeholder="Email" class="px-4 py-2 border border-neutral-200 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent focus:duration-500">
                 <input type="password" name="password" id="password" placeholder="Password" class="px-4 py-2 border border-neutral-200 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent focus:duration-500">
                 <button type="submit" class="px-4 py-2 text-primary-900 shadow-lg rounded-lg hover:shadow-2xl hover:text-primary-50 hover:duration-300">Login</button>
+                <input type="email" name="email" id="email" placeholder="Email" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent" required>
+                <input type="password" name="password" id="password" placeholder="Password" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent" required>
+                <button type="submit" class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Login</button>
             </div>
         </div>
     </div>

@@ -22,17 +22,19 @@
     <h1 class="text-2xl font-bold mb-4">Halaman Menus</h1>
 
     <div class="border border-gray-300 rounded">
-        <div class="flex items-center bg-gray-200 py-2 px-4 bg-primary-200">
-            <div class="w-1/4">Nama</div>
-            <div class="w-1/4">Deskripsi</div>
-            <div class="w-1/4">Harga</div>
-            <div class="w-1/4">Gambar</div>
-            <div class="w-1/4">Aksi</div>
+        <div class="flex items-center bg-gray-200 py-2 px-6 bg-primary-200">
+            <div class="w-1/6">Nama</div>
+            <div class="w-1/6">Kategori</div>
+            <div class="w-1/6">Deskripsi</div>
+            <div class="w-1/6">Harga</div>
+            <div class="w-1/6">Gambar</div>
+            <div class="w-1/6">Aksi</div>
         </div>
 
         @foreach ($menus as $menu)
             <div class="flex items-center py-2 px-4">
                 <div class="w-1/4">{{ $menu->name }}</div>
+                <div class="w-1/4">{{ $menu->category->name }}</div>
                 <div class="w-1/4">{{ $menu->description }}</div>
                 <div class="w-1/4">{{ $menu->price }}</div>
                 <div class="w-1/4">

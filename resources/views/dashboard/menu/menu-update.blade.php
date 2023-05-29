@@ -20,6 +20,12 @@
           <input type="text" name="name" id="name" placeholder="Nama Menu" value="{{ $menu->name }}" class="appearance-none border border-gray-300 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:border-blue-500">
         </div>
         <div class="mb-4">
+          @foreach($categories as $category)
+            <input type="radio" name="category_id" id="category_id" value="{{ $category->id }}" {{ $menu->category_id == $category->id ? 'checked' : '' }}>
+            <label for="category_id" class="mr-2">{{ $category->name }}</label>
+          @endforeach
+        </div>
+        <div class="mb-4">
           <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Deskripsi Menu</label>
           <input type="text" name="description" id="description" placeholder="Deskripsi Menu" value="{{ $menu->description }}" class="appearance-none border border-gray-300 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:border-blue-500">
         </div>
