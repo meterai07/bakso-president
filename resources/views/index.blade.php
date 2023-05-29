@@ -14,7 +14,7 @@
             <div class="flex flex-row pt-10">
             <a class="font-medium text-base  w-36 h-12 bg-primary-500 border border-primary-500 rounded-md text-center py-2 text-neutral-50 hover:bg-primary-600 hover:duration-500" href="">Order Menu</a>
             <a class="flex flex-row items-center ml-6 font-medium text-base w-fit justify-center py-2 px-5 border border-primary-500 rounded-md text-primary-500 hover:bg-primary-600 hover:duration-500" href="">
-                <p class="h-8 pt-[2px] pr-2">See Menu</p> 
+                <p class="h-8 pt-[2px] pr-2">See Menu</p>
                 <img src="../assets/icons/arrow-right.svg" alt="">
             </a>
             </div>
@@ -191,10 +191,10 @@
                                 <p class="w-[300px]">08.00 - 21.30 WIB (Setiap Hari) </p>
                             </div>
                         </div>
-                        <div class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
+                        <a href="" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
                             <img src="..\assets\icons\way.svg" alt="">
-                            <a class="font-medium text-base text-center text-neutral-50" href="">Petunjuk Arah</a>
-                        </div>
+                            <p class="font-medium text-base text-center text-neutral-50">Petunjuk Arah</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -217,10 +217,10 @@
                                 <p class="w-[300px]">08.00 - 21.30 WIB (Setiap Hari) </p>
                             </div>
                         </div>
-                        <div class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
+                        <a href="" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
                             <img src="..\assets\icons\way.svg" alt="">
-                            <a class="font-medium text-base text-center text-neutral-50" href="">Petunjuk Arah</a>
-                        </div>
+                            <p class="font-medium text-base text-center text-neutral-50">Petunjuk Arah</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -243,10 +243,10 @@
                                 <p class="w-[300px]">08.00 - 21.30 WIB (Setiap Hari) </p>
                             </div>
                         </div>
-                        <div class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
+                        <a href="" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
                             <img src="..\assets\icons\way.svg" alt="">
-                            <a class="font-medium text-base text-center text-neutral-50" href="">Petunjuk Arah</a>
-                        </div>
+                            <p class="font-medium text-base text-center text-neutral-50">Petunjuk Arah</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -423,7 +423,7 @@
 
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
-            document.getElementById("navbar").style.backgroundColor = "white";
+            document.getElementById("navbar").style.backgroundColor = "#FAFAFA";
             document.getElementById("navbar").style.zIndex = 100;
         } else {
             document.getElementById("navbar").style.top = "-100px";

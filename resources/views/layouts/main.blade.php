@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Halaman @yield('title')</title>
+    <title>Bakso President | @yield('title')</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
-<body class="font-work-sans">
+<body class="font-work-sans bg-neutral-50">
     @include('partials.navbar')
         @yield('content')
     @include('partials.footer')
@@ -24,7 +24,7 @@
             spaceBetween: 30,
             slidesPerGroup: 4,
             slidesPerColumn: 2,
-            
+
 
         navigation: {
             nextEl: ".button-next",
@@ -39,7 +39,7 @@
             spaceBetween: 30,
             slidesPerGroup: 1,
             slidesPerColumn: 1,
-            
+
 
         navigation: {
             nextEl: ".button-next2",
