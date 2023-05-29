@@ -283,7 +283,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="ts-sw-1" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px]">
+                        <div id="ts-sw-1" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[500px]">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -304,7 +304,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="ts-sw-2" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                        <div id="ts-sw-2" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl opacity-80" style="width: 1000px !important;">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -423,6 +423,8 @@
 
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
+            document.getElementById("navbar").style.backgroundColor = "white";
+            document.getElementById("navbar").style.zIndex = 100;
         } else {
             document.getElementById("navbar").style.top = "-100px";
         }
