@@ -7,5 +7,5 @@
         <a href="" class="text-base font-medium text-neutral-900 hover:text-primary-500 hover:duration-100">Outlets</a>
         <a href="" class="text-base font-medium text-neutral-900 hover:text-primary-500 hover:duration-100">Testimonial</a>
     </div>
-    <a href="/order" class="py-3 px-6 rounded-lg bg-primary-500 text-base font-semibold text-neutral-50 hover:bg-primary-600 hover:duration-500">Order Menu</a>
+    <a href="/order" class="py-3 px-6 rounded-lg bg-primary-500 text-base text-center font-semibold text-neutral-50 hover:bg-primary-600 hover:duration-500">Order Menu</a>
 </nav>

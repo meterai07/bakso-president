@@ -48,5 +48,40 @@
         },
         });
     </script>
+
+    <!-- Navigation Bar -->
+    <script>
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+            document.getElementById("navbar").style.backgroundColor = "#FAFAFA";
+            document.getElementById("navbar").style.zIndex = 100;
+        } else {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+    {{-- Testimonial --}}
+    <script>
+    let c = 1;
+
+    function opacityNext() {
+        document.getElementById("ts-sw-" + c).style.opacity = 0.8;
+        c = c + 1;
+        if (c== 6) c = 0;
+        document.getElementById("ts-sw-" + c).style.opacity = 1;
+    }
+
+    function opacityPrev() {
+        document.getElementById("ts-sw-" + c).style.opacity = 0.8;
+        c = c - 1;
+        if (c== -1) c = 5;
+        document.getElementById("ts-sw-" + c).style.opacity = 1;
+    }
+    </script>
 </body>
 </html>

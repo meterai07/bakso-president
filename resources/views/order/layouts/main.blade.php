@@ -13,40 +13,20 @@
         @yield('order')
     @include('order.components.footer')
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
+    <!-- Navigation Bar -->
     <script>
-        let swiper = new Swiper(".mySwiper", {
-            loop: true,
-            slidesPerView: 4,
-            spaceBetween: 30,
-            slidesPerGroup: 4,
-            slidesPerColumn: 2,
-
-
-        navigation: {
-            nextEl: ".button-next",
-            prevEl: ".button-prev",
-            hiddenClass: ".swiper-button-hidden",
-        },
-        });
-
-        let swiper2 = new Swiper(".mySwiper2", {
-            loop: true,
-            slidesPerView: 3,
-            spaceBetween: 30,
-            slidesPerGroup: 1,
-            slidesPerColumn: 1,
-
-
-        navigation: {
-            nextEl: ".button-next2",
-            prevEl: ".button-prev2",
-            hiddenClass: ".swiper-button-hidden2",
-        },
-        });
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+            document.getElementById("navbar").style.backgroundColor = "#FAFAFA";
+            document.getElementById("navbar").style.zIndex = 100;
+        } else {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
     </script>
 </body>
 </html>

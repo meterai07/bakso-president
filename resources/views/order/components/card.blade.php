@@ -1,33 +1,18 @@
-@foreach ($menus as $menu)
-<div class="rounded-2xl w-auto shadow-lg">
+{{-- Card Menu --}}
+<div class="w-auto flex flex-col shadow-lg rounded-2xl">
+    {{-- Picture Menu --}}
     @if (!@empty($menu->image))
-        <img src="{{ asset('storage/' . $menu->image) }}" alt="{{ $menu->name }}" class="w-[360px] h-80 rounded-t-2xl object-cover object-center"</div>
+        <img src="{{ asset('storage/' . $menu->image) }}" alt="{{ $menu->name }}" class="w-full h-80 object-cover object-center rounded-t-2xl">
     @else
-        <img src="../assets/img/menu-empty.svg" alt="" class="w-[360px] h-80 rounded-t-2xl object-cover object-center">
+        <img src="../assets/img/menu-empty.svg" class="w-full h-80 object-cover object-center rounded-t-2xl">
     @endif
+    {{-- Content Menu --}}
     <div class="flex flex-col gap-4 p-6">
-        <div>
-            <h3 class="font-lora font-semibold text-2xl">{{ $menu->name }}</h3>
-            <p class="text-sm">{{ $menu->description }}</p>
+        <div class="flex flex-col gap-2">
+            <h1 class="font-lora font-bold text-2xl text-neutral-900">{{ $menu->name }}</h1>
+            <p class="text-base text-neutral-700">{{ $menu->description }}</p>
         </div>
-        <h4 class="text-lg text-primary-500 font-semibold">Rp {{ $menu->price }}</h4>
-        <a class="block py-2 px-4 bg-primary-500 text-neutral-50 text-center text-base font-semibold rounded-lg">Add Menu</a>
+        <h2 class="font-lora font-semibold text-xl text-primary-500">Rp {{ $menu->price }}</h2>
+        <a class="block cursor-pointer py-3 px-6 rounded-lg bg-primary-500 text-base text-center font-semibold text-neutral-50 hover:bg-primary-600 hover:duration-500">Add Menu</a>
     </div>
 </div>
-@endforeach
-
-<script>
-    function change() {
-        const order = document.getElementById('btn-order');
-        var add = document.getElementById('btn-add');
-        const display = order.style.display;
-
-        if(display == "block") {
-            order.style.display = "none";
-            add.style.display = "flex"
-        } else {
-            add.style.display = "none";
-            order.style.display = "block"
-        }
-    }
-</script>
