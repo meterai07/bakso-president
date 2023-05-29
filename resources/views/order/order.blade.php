@@ -17,4 +17,11 @@
             @include('order.partials.card')
         <h2 class="font-lora text-[40px] font-bold col-span-4">Add Ons</h2>
     </div>
+    <div class="flex flex-row bg-primary-500 items-center">
+        <div class="flex flex-col py-4 px-24  text-neutral-50">
+            <p>2 Item</p>
+            <p>Rp 10.000</p>
+        </div>
+        <a href="" class="bg-neutral-50 text-primary-500 py-4 px-12 rounded-lg w-fit h-fit">Order</a>
+    </div>
 @endsection
