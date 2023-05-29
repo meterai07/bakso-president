@@ -93,10 +93,6 @@ class MenuController extends Controller
         }
 
         return redirect('/admin/menu')->with('error', 'Menu item is failed to update');
-
-        // $menu->update($validated);
-
-        // return redirect('/admin/menu')->with('success', 'Menu item is successfully updated');
     }
 
     /**
@@ -108,8 +104,10 @@ class MenuController extends Controller
             Storage::delete($menu->image);
         }
 
-        $menu->delete();
+        if ($menu->delete()) {
+            return redirect('/admin/menu')->with('success', 'Menu item is successfully deleted');
+        }
 
-        return redirect('/admin/menu')->with('success', 'Menu item is successfully deleted');
+        return redirect('/admin/menu')->with('error', 'Menu item is failed to delete');
     }
 }
