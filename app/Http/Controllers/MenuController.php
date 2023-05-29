@@ -83,7 +83,7 @@ class MenuController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            // $validated['image'] = $request->file('image')->store('menu-images');
+            $validated['image'] = $request->file('image')->store('menu-images');
         }
 
         $menu->update($validated);
