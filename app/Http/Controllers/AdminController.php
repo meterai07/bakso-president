@@ -17,7 +17,6 @@ class AdminController extends Controller
     {
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
-            // return redirect()->intended('admin/dashboard');
             return redirect('/admin/dashboard');
         }
         return redirect('/admin')->with('error', 'Oppes! You have entered invalid credentials');

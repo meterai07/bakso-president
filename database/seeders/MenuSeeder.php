@@ -18,18 +18,28 @@ class MenuSeeder extends Seeder
             'name' => 'Bakso Urat',
             'description' => 'Bakso Urat Enak',
             'price' => '12000',
+            'category_id' => '1',
         ]);
 
         Menu::create([
             'name' => 'Bakso Sapi',
             'description' => 'Bakso Sapi Enak',
             'price' => '10000',
+            'category_id' => '1',
         ]);
 
         Menu::create([
             'name' => 'Bakso Ayam',
             'description' => 'Bakso Ayam Enak',
             'price' => '8000',
+            'category_id' => '1',
+        ]);
+
+        Menu::create([
+            'name' => 'Bakso Ikan',
+            'description' => 'Bakso Ikan Enak',
+            'price' => '10000',
+            'category_id' => '1',
         ]);
     }
 }
