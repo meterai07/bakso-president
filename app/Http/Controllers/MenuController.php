@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Menu;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class MenuController extends Controller
 {
@@ -52,7 +53,11 @@ class MenuController extends Controller
      */
     public function show(Menu $menu)
     {
-        //
+        $menus = Menu::all();
+
+        return view('dashboard.menu.menu', [
+            'menus' => $menus,
+        ]);
     }
 
     /**
@@ -78,7 +83,7 @@ class MenuController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            $validated['image'] = $request->file('image')->store('menu-images');
+            // $validated['image'] = $request->file('image')->store('menu-images');
         }
 
         $menu->update($validated);
@@ -91,6 +96,12 @@ class MenuController extends Controller
      */
     public function destroy(Menu $menu)
     {
-        //
+        if ($menu->image) {
+            Storage::delete($menu->image);
+        }
+
+        $menu->delete();
+
+        return redirect('/admin/menu')->with('success', 'Menu item is successfully deleted');
     }
 }
