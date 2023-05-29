@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -24,7 +25,9 @@ class MenuController extends Controller
      */
     public function create()
     {
-        return view('dashboard.menu.menu-create');
+        return view('dashboard.menu.menu-create', [
+            'categories' => Category::all(),
+        ]);
     }
 
     /**
@@ -37,6 +40,7 @@ class MenuController extends Controller
             'description' => 'required|max:255',
             'price' => 'required|numeric|min:0',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
+            'category_id' => 'required|exists:categories,id',
         ]);
 
         if ($request->hasFile('image')) {
@@ -69,6 +73,7 @@ class MenuController extends Controller
     {
         return view('dashboard.menu.menu-update', [
             'menu' => $menu,
+            'categories' => Category::all(),
         ]);
     }
 
@@ -82,6 +87,7 @@ class MenuController extends Controller
             'description' => 'required|max:255',
             'price' => 'required|numeric|min:0',
             'image' => 'image|mimes:jpeg,png,jpg,svg',
+            'category_id' => 'required|exists:categories,id',
         ]);
 
         if ($request->hasFile('image')) {
@@ -93,10 +99,6 @@ class MenuController extends Controller
         }
 
         return redirect('/admin/menu')->with('error', 'Menu item is failed to update');
-
-        // $menu->update($validated);
-
-        // return redirect('/admin/menu')->with('success', 'Menu item is successfully updated');
     }
 
     /**
@@ -108,8 +110,10 @@ class MenuController extends Controller
             Storage::delete($menu->image);
         }
 
-        $menu->delete();
+        if ($menu->delete()) {
+            return redirect('/admin/menu')->with('success', 'Menu item is successfully deleted');
+        }
 
-        return redirect('/admin/menu')->with('success', 'Menu item is successfully deleted');
+        return redirect('/admin/menu')->with('error', 'Menu item is failed to delete');
     }
 }
