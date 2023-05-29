@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Menu;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class MenuController extends Controller
 {
@@ -33,8 +34,8 @@ class MenuController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|max:255',
-            'description' => 'required',
-            'price' => 'required|numeric',
+            'description' => 'required|max:255',
+            'price' => 'required|numeric|min:0',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
@@ -42,9 +43,11 @@ class MenuController extends Controller
             $validated['image'] = $request->file('image')->store('menu-images');
         }
 
-        Menu::create($validated);
+        if (Menu::create($validated)) {
+            return redirect('/admin/menu')->with('success', 'Menu item is successfully saved');
+        }
 
-        return redirect('/admin/menu')->with('success', 'Menu item is successfully saved');
+        return redirect('/admin/menu')->with('error', 'Menu item is failed to save');
     }
 
     /**
@@ -52,7 +55,11 @@ class MenuController extends Controller
      */
     public function show(Menu $menu)
     {
-        //
+        $menus = Menu::all();
+
+        return view('dashboard.menu.menu', [
+            'menus' => $menus,
+        ]);
     }
 
     /**
@@ -60,7 +67,9 @@ class MenuController extends Controller
      */
     public function edit(Menu $menu)
     {
-        //
+        return view('dashboard.menu.menu-update', [
+            'menu' => $menu,
+        ]);
     }
 
     /**
@@ -68,7 +77,26 @@ class MenuController extends Controller
      */
     public function update(Request $request, Menu $menu)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'required|max:255',
+            'price' => 'required|numeric|min:0',
+            'image' => 'image|mimes:jpeg,png,jpg,svg',
+        ]);
+
+        if ($request->hasFile('image')) {
+            $validated['image'] = $request->file('image')->store('menu-images');
+        }
+
+        if ($menu->update($validated)) {
+            return redirect('/admin/menu')->with('success', 'Menu item is successfully updated');
+        }
+
+        return redirect('/admin/menu')->with('error', 'Menu item is failed to update');
+
+        // $menu->update($validated);
+
+        // return redirect('/admin/menu')->with('success', 'Menu item is successfully updated');
     }
 
     /**
@@ -76,6 +104,12 @@ class MenuController extends Controller
      */
     public function destroy(Menu $menu)
     {
-        //
+        if ($menu->image) {
+            Storage::delete($menu->image);
+        }
+
+        $menu->delete();
+
+        return redirect('/admin/menu')->with('success', 'Menu item is successfully deleted');
     }
 }

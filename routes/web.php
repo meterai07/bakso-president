@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\MenuController;
-use App\Http\Controllers\OrderMenuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +22,7 @@ use App\Http\Controllers\OrderMenuController;
 
 Route::get('/', [IndexController::class, 'index']);
 
-Route::get('/order', [OrderMenuController::class, 'index']);
+Route::get('/order', [IndexController::class, 'order']);
 
 Route::get('/admin', [AdminController::class, 'index'])->middleware('guest');
 Route::post('/admin', [AdminController::class, 'login']);
@@ -34,3 +33,6 @@ Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->middlewar
 Route::get('/admin/menu', [MenuController::class, 'index'])->middleware('auth');
 Route::get('/admin/menu/create', [MenuController::class, 'create'])->middleware('auth');
 Route::post('/admin/menu/create', [MenuController::class, 'store'])->middleware('auth');
+Route::get('/admin/menu/update/{menu:id}', [MenuController::class, 'edit'])->middleware('auth');
+Route::post('/admin/menu/update/{menu:id}', [MenuController::class, 'update'])->middleware('auth');
+Route::get('/admin/menu/delete/{menu:id}', [MenuController::class, 'destroy'])->middleware('auth');

@@ -1,4 +1,4 @@
-<nav id="navbar" class="flex my-4 px-[100px] sticky justify-between items-center duration-500 bg-transparent">
+<nav id="navbar" class="flex py-4 px-[100px] fixed justify-between items-center w-screen duration-500 bg-transparent">
     <a href="/"><img class = "w-40" src="../assets/icons/Logo-Bakso.png"></a>
     <ul class="flex items-center gap-6 bg-transparent">
         <li class="mx-2 "><a class="font-medium text-base hover:duration-500 hover:text-primary-500" href="/">Home</a></li>
