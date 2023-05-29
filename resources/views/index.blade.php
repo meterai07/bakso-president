@@ -374,7 +374,7 @@
                                     <div class="flex flex-row gap-2">
                                         <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
                                         <div class="flex flex-col gap-[1px] py-[3px]">
-                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bagong</h1>
                                             <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
                                             <div class="flex flex-row gap-[2px] pt-[2px]">
                                                 <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
