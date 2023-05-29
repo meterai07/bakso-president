@@ -6,7 +6,7 @@
 
 <form action="/admin" method="post">
     @csrf
-    <div class="flex flex-col items-center justify-center h-screen bg-primary-100">
+    <div class="flex flex-col items-center justify-center h-screen bg-primary-100 shadow-2xl">
         <div class="flex flex-col items-center justify-center w-96 bg-cover rounded-[30px] shadow-lg p-5" style="background-image: url(../assets/img/login-bg.svg)">
             <img class="w-30 p-4" src="../assets/img/Logo.svg" alt="">
             <div class="flex flex-col items-center justify-center w-full pt">
