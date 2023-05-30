@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bakso President | @yield('title')</title>
     @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body class="font-work-sans bg-neutral-50">

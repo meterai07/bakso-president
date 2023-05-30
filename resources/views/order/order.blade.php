@@ -15,17 +15,13 @@
 
     {{-- Content --}}
     <div class="grid grid-cols-4 w-auto mx-[100px] gap-6 mt-6">
-        <h2 class="font-lora font-bold text-4xl col-span-4 mt-6">Main Course</h2>
-        @foreach ($menus as $menu)
-            @if ($menu->category_id == 1)
-                @include('order.components.card')
-            @endif
-        @endforeach
-        <h2 class="font-lora font-bold text-4xl col-span-4 mt-6">Add Ons</h2>
-        @foreach ($menus as $menu)
-            @if ($menu->category_id == 2)
-                @include('order.components.card')
-            @endif
+        @foreach($categories as $category)
+        <h2 class="font-lora font-bold text-4xl col-span-4 mt-6">{{ $category->name }}</h2>
+            @foreach($menus as $menu)
+                @if($menu->category_id == $category->id)
+                    @include('order.components.card')
+                @endif
+            @endforeach
         @endforeach
     </div>
 </div>

@@ -13,6 +13,6 @@
             <p class="text-base text-neutral-700">{{ $menu->description }}</p>
         </div>
         <h2 class="font-lora font-semibold text-xl text-primary-500">Rp {{ $menu->price }}</h2>
-        <a class="block cursor-pointer py-3 px-6 rounded-lg bg-primary-500 text-base text-center font-semibold text-neutral-50 hover:bg-primary-600 hover:duration-500">Add Menu</a>
+        <a class="block cursor-pointer py-3 px-6 rounded-lg bg-primary-500 text-base text-center font-semibold text-neutral-50 hover:bg-primary-600 hover:duration-500" id="add-menu">Add Menu</a>
     </div>
 </div>
