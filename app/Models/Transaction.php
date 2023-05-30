@@ -10,6 +10,9 @@ class Transaction extends Model
     use HasFactory;
 
     protected $table = "transactions";
+    protected $fillable = [
+        'status',
+    ];
 
     public function orderMenu()
     {

@@ -45,18 +45,15 @@ class OrderMenuController extends Controller
      */
     public function show(Transaction $transaction, OrderMenu $orderMenu)
     {
-        // dd($orderMenu);
-        // $orderMenu = OrderMenu
         $orderMenu = OrderMenu::where('transaction_id', $transaction->id)->get();
-        // foreach ($orderMenu as $order) {
-        //     $menu = Menu::where('id', $order->menu_id)->get();
-        // }
-        // dd($menu);
-        
-        // $menu = Menu::where('id', $orderMenu->menu_id)->get();
+        $menus = OrderMenu::where('transaction_id', $transaction->id)->get()->map(function ($orderMenu) {
+            return $orderMenu->menu;
+        });
+
         return view('dashboard.transactions.order-menu-details', [
+            'transaction' => $transaction,
             'orderMenu' => $orderMenu,
-            // 'transaction' => $transaction,
+            'menus' => $menus,
         ]);
     }
 
@@ -71,9 +68,9 @@ class OrderMenuController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateOrderMenuRequest $request, OrderMenu $orderMenu)
+    public function update(Request $request, OrderMenu $orderMenu)
     {
-        //
+
     }
 
     /**

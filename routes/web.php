@@ -51,5 +51,6 @@ Route::prefix('admin')->group(function() {
         Route::get('/categories/delete/{category:id}', [CategoryController::class, 'destroy']);
 
         Route::get('/order/details/{transaction:id}', [OrderMenuController::class, 'show']);
+        Route::get('/order/update/{transaction:id}', [TransactionController::class, 'update']);
     });
 });

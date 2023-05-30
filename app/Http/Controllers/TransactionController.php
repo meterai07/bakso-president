@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
+use App\Models\OrderMenu;
 use App\Models\Transaction;
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreTransactionRequest;
 use App\Http\Requests\UpdateTransactionRequest;
-use App\Models\OrderMenu;
 
 class TransactionController extends Controller
 {
@@ -47,15 +48,19 @@ class TransactionController extends Controller
      */
     public function edit(Transaction $transaction)
     {
-        //
+
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateTransactionRequest $request, Transaction $transaction)
+    public function update(Request $request, Transaction $transaction)
     {
-        //
+        $transaction->update([
+            'status' => 'done',
+        ]);
+
+        return redirect('/admin/dashboard')->with('success', 'Transaction is successfully updated');
     }
 
     /**

@@ -18,11 +18,11 @@ class TransactionSeeder extends Seeder
         // ]);
 
         Transaction::create([
-            
+            'status' => 'pending'
         ]);
 
         Transaction::create([
-            
+            'status' => 'pending'
         ]);
     }
 }
