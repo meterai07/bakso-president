@@ -18,7 +18,7 @@ class OrderMenuController extends Controller
         // $menus = Menu::all();
         return view('order.order', [
             'menus' => Menu::all(),
-            'categories' => Category::all(),
+            'categories' => Category::has('menu')->get(),
         ]);
     }
 
