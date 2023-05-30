@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Menu extends Model
 {
     // use HasFactory;
-    protected $table = 'menu';
+    protected $table = 'menus';
     protected $fillable = [
         'name',
         'category_id',
@@ -20,5 +20,11 @@ class Menu extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+    
+    public function orderMenu()
+    {
+        // return $this->belongsToMany(OrderMenu::class);
+        return $this->hasMany(OrderMenu::class);
     }
 }

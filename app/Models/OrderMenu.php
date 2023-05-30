@@ -9,8 +9,16 @@ class OrderMenu extends Model
 {
     // use HasFactory;
 
+    protected $table = "order_menus";
+
+    public function transaction()
+    {
+        return $this->belongsTo(Transaction::class);
+    }
+
     public function menu()
     {
-        return $this->hasMany(Menu::class);
+        // return $this->belongsToMany(Menu::class);
+        return $this->belongsTo(Menu::class);
     }
 }

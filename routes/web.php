@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\OrderMenuController;
+use App\Http\Controllers\TransactionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,5 +49,7 @@ Route::prefix('admin')->group(function() {
         Route::get('/categories/update/{category:id}', [CategoryController::class, 'edit']);
         Route::post('/categories/update/{category:id}', [CategoryController::class, 'update']);
         Route::get('/categories/delete/{category:id}', [CategoryController::class, 'destroy']);
+
+        Route::get('/order/details/{transaction:id}', [OrderMenuController::class, 'show']);
     });
 });

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Menu;
 use App\Models\Category;
 use App\Models\OrderMenu;
+use App\Models\Transaction;
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreOrderMenuRequest;
 use App\Http\Requests\UpdateOrderMenuRequest;
 
@@ -41,9 +43,21 @@ class OrderMenuController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(OrderMenu $orderMenu)
+    public function show(Transaction $transaction, OrderMenu $orderMenu)
     {
-        //
+        // dd($orderMenu);
+        // $orderMenu = OrderMenu
+        $orderMenu = OrderMenu::where('transaction_id', $transaction->id)->get();
+        // foreach ($orderMenu as $order) {
+        //     $menu = Menu::where('id', $order->menu_id)->get();
+        // }
+        // dd($menu);
+        
+        // $menu = Menu::where('id', $orderMenu->menu_id)->get();
+        return view('dashboard.transactions.order-menu-details', [
+            'orderMenu' => $orderMenu,
+            // 'transaction' => $transaction,
+        ]);
     }
 
     /**

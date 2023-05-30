@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
+use App\Models\Transaction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -27,6 +28,7 @@ class AdminController extends Controller
         if (Auth::check()) {
             return view('dashboard.index', [
                 'user' => Auth::user(), 
+                'transactions' => Transaction::all(),
             ]);
         }
         return redirect('/admin')->with('error', 'Oppes! You have entered invalid credentials');

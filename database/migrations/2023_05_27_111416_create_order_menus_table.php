@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('order_menus', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('transaction_id');
+            $table->foreignId('menu_id');
+            $table->integer('quantity');
             $table->timestamps();
         });
     }
