@@ -15,10 +15,19 @@ import "./bootstrap";
 //     console.log("add-menu");
 // });
 
-document.addEventListener("click", () => {
-    if (event.target.id === "add-menu") {
-        console.log("add-menu");
-    }
-});
+// document.addEventListener("click", () => {
+//     if (event.target.id === "add-menu") {
+//         // console.log("add-menu");
+//         const id = document.querySelector(".menu-id").textContent;
+//         console.log(id);
+//     }
+// });
 
+// let menu = document.querySelectorAll(".add-menu");
+// menu.forEach((item) => {
+//     // console.log(item);
+//     item.addEventListener("click", () => {
+//         const id = item.getAttribute("data-id");
+//     });
+// });
 

@@ -15,6 +15,15 @@
 
     {{-- Content --}}
     <div class="grid grid-cols-4 w-auto mx-[100px] gap-6 mt-6">
+        <h2 class="font-lora font-bold text-4xl col-span-4">Make a order</h2>
+        <form action="/order/add" method="post">
+            @csrf
+            @foreach($menus as $menu)
+                <p>{{ $menu->name }}</p>
+                <input type="number" name="order-quantity" id="order-quantity" class="w-1/2 h-12 rounded-lg border border-neutral-300 text-base text-center font-semibold text-neutral-900" placeholder="Quantity">
+            @endforeach
+            <button type="submit" class="py-3 px-6 rounded-lg border border-primary-500 text-base text-center font-semibold text-neutral-50 hover:bg-neutral-50 hover:text-primary-500 hover:duration-500">Add Menu</button>
+        </form>
         @foreach($categories as $category)
         <h2 class="font-lora font-bold text-4xl col-span-4 mt-6">{{ $category->name }}</h2>
             @foreach($menus as $menu)
