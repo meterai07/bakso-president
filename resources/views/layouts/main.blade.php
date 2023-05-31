@@ -82,6 +82,13 @@
         if (c== -1) c = 5;
         document.getElementById("ts-sw-" + c).style.opacity = 1;
     }
+
+    function explore() {
+        var myElement = document.getElementById('explore');
+        var topPos = myElement.offsetTop;
+        document.getElementById('about-us').scrollTop = topPos;
+    }
+
     </script>
 </body>
 </html>

@@ -21,13 +21,13 @@
         </div>
         <div class="flex object-fill"><img class = "w-[700px]" src="../assets/img/bakso.svg" alt=""></div>
     </div>
-    <a class="flex flex-col items-center text-primary-500" href="">
+    <a onclick="explore()" class="flex flex-col items-center text-primary-500">
         <p class="leading-5 font-semibold text-base">Explore</p>
         <img src="../assets/icons/chevron-down.svg" alt="">
     </a>
 
     <!-- about us -->
-    <div class="flex flex-row bg-neutral-700 bg-cover items-center justify-center my-[100px] bg-center gap-20 py-24" style="background-image: url(../assets/img/about-us-frame.svg)">
+    <div id="about-us" class="flex flex-row bg-neutral-700 bg-cover items-center justify-center my-[100px] bg-center gap-20 py-24" style="background-image: url(../assets/img/about-us-frame.svg)">
         <div>
             <img src="../assets/img/about-us-img.svg" alt="">
         </div>
@@ -262,7 +262,7 @@
                 <img onclick="opacityPrev()" class="button-prev2 h-max px-4 bg-cover" src="../assets/icons/back-button-testimoni.svg" alt="">
                 <div class="flex flex-row swiper mySwiper2 w-[1000px]">
                     <div class="swiper-wrapper">
-                        <div id="ts-sw-0" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                        <div id="ts-sw-0" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80 duration-500">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -283,7 +283,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="ts-sw-1" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[500px]">
+                        <div id="ts-sw-1" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[500px  duration-500]">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -304,7 +304,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="ts-sw-2" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl opacity-80" style="width: 1000px !important;">
+                        <div id="ts-sw-2" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl opacity-80  duration-500" style="width: 1000px !important;">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -325,7 +325,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="ts-sw-3" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                        <div id="ts-sw-3" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80  duration-500">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -346,7 +346,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="ts-sw-4" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                        <div id="ts-sw-4" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80  duration-500">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
@@ -367,7 +367,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="ts-sw-5" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80">
+                        <div id="ts-sw-5" class="swiper-slide flex flex-col bg-neutral-50 rounded-2xl w-[305px] opacity-80 duration-500">
                             <div class="flex flex-col items-start p-4 gap-2">
                                 <div class="flex flex-col item-start gap-3">
                                     <h1 class="font-normal text-xs text-neutral-900">Lorem ipsum dolor sit amet consectetur. Lectus metus suspendisse purus pretium. Dui egestas ut non ac sed vitae. Mauris ipsum ut sit gravida magna. Eleifend nibh scelerisque fringilla non tincidunt. </h1>
