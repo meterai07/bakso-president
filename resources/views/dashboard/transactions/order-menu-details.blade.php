@@ -10,9 +10,10 @@
 </head>
 <body>
     <div class="bg-primary-50 bg-cover h-screen">
-        <div class="flex flex-row gap-4">
-            <a href="/admin/dashboard">kembali ke dashboard</a>
-        </div>
+        <a href="/admin/dashboard" class="flex text-blue-500 hover:text-blue-700 items-center ml-12 pt-4 gap-2 font-semibold w-8">
+            <img src="/assets/icons/chevron-left.svg" alt="">
+            Kembali
+        </a>
         <div class="flex flex-col justify-center">
             <div class="flex flex-col items-center justify-center pt-16">
                 <h1 class="text-xl font-bold">Admin Order Details</h1>
