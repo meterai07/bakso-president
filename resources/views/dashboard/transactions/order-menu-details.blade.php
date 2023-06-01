@@ -56,7 +56,7 @@
                         </tr>
                     </thead>
                   </table>
-                  <a class="py-3 px-6 rounded-lg bg-primary-500 text-base text-center font-semibold text-neutral-50 hover:bg-primary-600 hover:duration-500" href="/admin/order/update/{{ $transaction->id }}">Selesai</a>
+                  <a class="py-3 px-6 rounded-lg bg-primary-500 text-base text-center font-semibold text-neutral-50 hover:bg-primary-600 hover:duration-500" href="/admin/order/update/{{ $transaction->id }}">Confirm</a>
                 </div>
             </div>
         </div>

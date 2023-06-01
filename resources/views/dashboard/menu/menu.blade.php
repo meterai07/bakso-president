@@ -3,50 +3,49 @@
 @section('title', ' Menu')
 
 @section('content')
-    {{-- <a href="/admin/dashboard">kembali</a>
-    <h1>Halaman Menus</h1>
-    <a href="/admin/menu/create">Tambah Menu</a>
-
-    @foreach ($menus as $menu)
-        <h1>{{ $menu->name }}</h1>
-        <a href="/admin/menu/update/{{ $menu->id }}">Update Menu</a>
-        <a href="/admin/menu/delete/{{ $menu->id }}">Delete Menu</a>
-        <p>{{ $menu->description }}</p>
-        <p>{{ $menu->price }}</p>
-        <p>{{ $menu->image }}</p> 
-        <img src="{{ asset('storage/' . $menu->image) }}" alt="{{ $menu->name }}" width="200">
-    @endforeach --}}
-
-    <a href="/admin/dashboard" class="text-blue-500 hover:text-blue-700">Kembali</a>
-    <a href="/admin/menu/create" class="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded mb-4">Tambah Menu</a>
-    <h1 class="text-2xl font-bold mb-4">Halaman Menus</h1>
-
-    <div class="border border-gray-300 rounded">
-        <div class="flex items-center bg-gray-200 py-2 px-6 bg-primary-200">
-            <div class="w-1/6">Nama</div>
-            <div class="w-1/6">Kategori</div>
-            <div class="w-1/6">Deskripsi</div>
-            <div class="w-1/6">Harga</div>
-            <div class="w-1/6">Gambar</div>
-            <div class="w-1/6">Aksi</div>
+    <div class="h-screen bg-primary-50">
+        <a href="/admin/dashboard" class="text-blue-500 hover:text-blue-700">Kembali</a>
+        <a href="/admin/menu/create" class="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded mb-4">Tambah Menu</a>
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="text-2xl font-bold p-8">List Menu</h1>
+            <table class="table-fixed text-center">
+                <thead>
+                <tr>
+                    <th class="border p-4 border-collapse border-primary-500 w-[200px] bg-primary-500 text-primary-50">Nama</th>
+                    <th class="border p-4 border-collapse border-primary-500 w-[200px] bg-primary-500 text-primary-50">Kategori</th>
+                    <th class="border p-4 border-collapse border-primary-500 w-[200px] bg-primary-500 text-primary-50">Deskripsi</th>
+                    <th class="border p-4 border-collapse border-primary-500 w-[200px] bg-primary-500 text-primary-50">Harga</th>
+                    <th class="border p-4 border-collapse border-primary-500 w-[200px] bg-primary-500 text-primary-50">Gambar</th>
+                </tr>
+                </thead>
+                <tbody>
+                    @foreach ($menus as $menu)
+                    <tr>
+                        <td class="border p-2  border-collapse border-primary-500">{{ $menu->name }}</td>
+                        <td class="border p-2 border-collapse border-primary-500">{{ $menu->category->name }}</td>
+                        <td class="border p-2 border-collapse border-primary-500">{{ $menu->description }}</td>
+                        <td class="border p-2 border-collapse border-primary-500">{{ $menu->price }}</td>
+                        <td class="border p-2 border-collapse border-primary-500">
+                            <img src="{{ asset('storage/' . $menu->image) }}" alt="{{ $menu->name }}" width="200">
+                        </td>
+                        <td class="pl-4 border-collapse border-primary-500">
+                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/update/{{ $menu->id }}">
+                                Update
+                            </a>
+                        </td>
+                        <td class="pl-2">|</td>
+                        <td class="pl-2 border-collapse border-primary-500">
+                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/delete/{{ $menu->id }}">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
-
-        @foreach ($menus as $menu)
-            <div class="flex items-center py-2 px-4">
-                <div class="w-1/4">{{ $menu->name }}</div>
-                <div class="w-1/4">{{ $menu->category->name }}</div>
-                <div class="w-1/4">{{ $menu->description }}</div>
-                <div class="w-1/4">{{ $menu->price }}</div>
-                <div class="w-1/4">
-                    <img src="{{ asset('storage/' . $menu->image) }}" alt="{{ $menu->name }}" width="200">
-                </div>
-                <div class="w-1/4">
-                    <a href="/admin/menu/update/{{ $menu->id }}" class="text-blue-500 hover:text-blue-700">Update Menu |</a>
-                    <a href="/admin/menu/delete/{{ $menu->id }}" class="text-red-500 hover:text-red-700"> Delete Menu</a>
-                </div>
-            </div>
-        @endforeach
     </div>
+    
 
 
 @endsection
