@@ -1,4 +1,3 @@
-{{-- Footer --}}
 <footer>
     <div class="w-full py-12 bg-cover bg-center" style="background-image: url(../assets/img/footer-bg.svg)">
         <div class="flex flex-col gap-6 items-center justify-center">
@@ -14,5 +13,3 @@
         </div>
     </div>
 </footer>
-
-
