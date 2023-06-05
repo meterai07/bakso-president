@@ -36,7 +36,7 @@
                             </a>
                         </td>
                         <td class="pl-2 border-collapse border-primary-500">
-                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/delete/{{ $menu->id }}">
+                            <a data-confirm-delete="true" class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/delete/{{ $menu->id }}">
                                 <img class="w-8" src="../assets/icons/delete-menu.svg" alt="">
                             </a>
                         </td>

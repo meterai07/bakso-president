@@ -15,8 +15,14 @@ class MenuController extends Controller
     public function index()
     {
         $menus = Menu::all();
+        $title = "Hapus Menu!!!";
+        $text = "Apakah anda yakin?";
+
+        confirmDelete($title, $text);
+
         return view('dashboard.menu.menu', [
             'menus' => $menus,
+            // 'menu   ' => compact('menus'),
         ]);
     }
 
@@ -105,7 +111,7 @@ class MenuController extends Controller
      * Remove the specified resource from storage.
      */
     public function destroy(Menu $menu)
-    {
+    {   
         if ($menu->image) {
             Storage::delete($menu->image);
         }
