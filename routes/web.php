@@ -19,10 +19,6 @@ use App\Http\Controllers\TransactionController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/order', [OrderMenuController::class, 'index']);
