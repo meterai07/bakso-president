@@ -18,6 +18,7 @@
                     <th class="border p-4 border-collapse border-primary-500 w-[200px] bg-primary-500 text-primary-50">Deskripsi</th>
                     <th class="border p-4 border-collapse border-primary-500 w-[200px] bg-primary-500 text-primary-50">Harga</th>
                     <th class="border p-4 border-collapse border-primary-500 w-[200px] bg-primary-500 text-primary-50">Gambar</th>
+                    <th class="border p-4 border-collapse border-primary-500 w-[400px] bg-primary-500 text-primary-50">Aksi</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -30,17 +31,12 @@
                         <td class="border p-2 border-collapse border-primary-500">
                             <img src="{{ asset('storage/' . $menu->image) }}" alt="{{ $menu->name }}" width="200">
                         </td>
-                        <td class="pl-4 border-collapse border-primary-500">
+                        <td class="flex items-center justify-evenly border border-collapse border-primary-500 gap-2 p-4">
                             <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/update/{{ $menu->id }}">
-                                Update
-                                {{-- <img class="w-8" src="../assets/icons/update-menu.svg" alt="update"> --}}
+                                Update 
                             </a>
-                        </td>
-                        <td class="pl-2">|</td>
-                        <td class="pl-2 border-collapse border-primary-500">
                             <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/delete/{{ $menu->id }}" data-confirm-delete="true">
                                 Hapus
-                                {{-- <img class="w-8" src="../assets/icons/delete-menu.svg" alt="delete"> --}}
                             </a>
                         </td>
                     </tr>
