@@ -13,7 +13,7 @@
         @yield('content')
     @else
         @include('dashboard.components.navbar')
-        @yield('content')
+            @yield('content')
         @include('dashboard.components.footer')
     @endif
     @include('sweetalert::alert')

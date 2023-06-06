@@ -2,7 +2,7 @@
     <div class="w-full py-12 bg-cover bg-center" style="background-image: url(../assets/img/footer-bg.svg)">
         <div class="flex flex-col gap-6 items-center justify-center">
             <img src="../assets/img/footer-logo.png" alt="Logo" class="w-fit">
-            <p class="text-base text-neutral-50 text-center w-[720px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio amet nesciunt odit a repellendus iure, repellat debitis. Maxime, odio laboriosam cupiditate dolorem quaerat minima quod repellat, voluptatum in iusto nemo?</p>
+            <p class="text-base text-neutral-50 text-center w-[720px]">"Rasakan kelezatan tak tertandingi dengan Bakso President, menu lezat yang menggoyang lidah dengan cita rasa yang menggugah selera. Nikmati kejujuran bahan baku terbaik dalam setiap suapan."</p>
         </div>
     </div>
     <div class="flex justify-between w-full px-[100px] py-4 items-center bg-primary-500">

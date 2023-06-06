@@ -10,7 +10,7 @@
     <div class="flex flex-row items-center h-[90vh] mx-28 justify-between">
         <div class="flex flex-col">
             <h1 class="font-lora font-bold text-6xl mb-4 tracking-wider leading-tight">Where <span class="text-primary-500">Happiness</span>  and <span class="text-primary-500">Meatballs</span> Collide</h1>
-            <h2 class="font-normal text-lg w-[700px] tracking-wider">Lorem ipsum dolor sit amet consectetur. Eget ac mauris morbi elementum placerat vulputate scelerisque nisi et. Duis habitant feugiat leo et cursus nulla mauris.</h2>
+            <h2 class="font-normal text-lg w-[700px] tracking-wider">"Bakso President, kenikmatan daging sapi yang lezat dan kuah kaldunya yang kaya akan rasa."</h2>
             <div class="flex flex-row pt-10">
             <a class="font-medium text-base  w-36 h-12 bg-primary-500 border border-primary-500 rounded-md text-center py-2 text-neutral-50 hover:bg-primary-600 hover:duration-500" href="/order">Order Menu</a>
             <a class="flex flex-row items-center ml-6 font-medium text-base w-fit justify-center py-2 px-5 border border-primary-500 rounded-md text-primary-500 hover:bg-primary-600 hover:duration-500" href="#menus">
@@ -34,7 +34,7 @@
         <div class="flex flex-col gap-y-6">
             <h3 class="text-neutral-50 font-lora text-2xl leading-8 font-semibold">About Us</h3>
             <h2 class="text-neutral-50 font-lora text-5xl font-bold tracking-tight w-[700px]">Dedicated To Delight <span class="text-primary-500">You The Best Meatball</span></h2>
-            <p class="text-base font-normal text-neutral-50 w-[600px]">Lorem ipsum dolor sit amet consectetur. Cursus enim libero mattis lectus vitae convallis nunc dictum fusce. Est eleifend tristique porta magna ut augue ultricies. Arcu sit eu tellus ac elementum. Nulla dictum arcu enim viverra cursus eu parturient congue. Pharetra cursus nibh vitae maecenas iaculis nunc consectetur ultrices.</p>
+            <p class="text-base font-normal text-neutral-50 w-[600px]">Bakso President didirikan oleh H. Abdul Ghani Sugito, yang biasa dipanggil Abah Sugito, pada tahun 1977. “Awalnya Abah ikut jualan baksonya orang. Wong nggak punya modal sama sekali dan memang saat itu beliau nggak punya keahlian apa-apa. Jadi bisanya ya itu saja dijalani buat bertahan hidup,” sebut Dani, panggilan akrab Ali Wahdani, Manajer Operasional Bakso President.  Sekitar lima tahun berjualan di sekitar Kota Malang, Abah lalu mengumpulkan modal dan mencoba jualan sendiri. Pada 1982, dia membuka warung tenda di belakang Bioskop President, Malang. Dari nama bioskop ini akhirnya muncul nama Bakso President. Lokasi itulah yang sampai sekarang jadi lokasi utama jualan Bakso President.</p>
             <div class="flex flex-row pt-6">
                 <div class="flex flex-col justify-center items-center w-[200px] gap-2">
                     <h1 class="font-lora font-bold text-5xl text-primary-500">40+</h1>
@@ -63,11 +63,23 @@
                 <div class="swiper-wrapper pb-10">
                     <div class="swiper-slide">
                         <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <img class="h-72 object-cover rounded-t-2xl" src="..\assets\img\pentol\pentol.jpeg" alt="">
                             <div class="flex flex-col items-start p-6 gap-4 ">
                                 <div class="flex flex-col item-start gap-2">
-                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 1</h1>
-                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Iga</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">5 pcs Bakso Besar dan Iga Sapi</h2>
+                                </div>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 30.000</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
+                            <img class="h-72 object-cover rounded-t-2xl" src="..\assets\img\pentol\pentol1.jpeg" alt="">
+                            <div class="flex flex-col items-start p-6 gap-4 ">
+                                <div class="flex flex-col item-start gap-2">
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Mie</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs dan Mie</h2>
                                 </div>
                                 <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
@@ -75,11 +87,11 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <img class="h-72 object-cover rounded-t-2xl" src="..\assets\img\pentol\pentol2.jpeg" alt="">
                             <div class="flex flex-col items-start p-6 gap-4 ">
                                 <div class="flex flex-col item-start gap-2">
-                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 2</h1>
-                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Bihun</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs dan Bihun</h2>
                                 </div>
                                 <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
@@ -87,11 +99,23 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <img class="h-72 object-cover rounded-t-2xl" src="..\assets\img\pentol\pentol3.jpeg" alt="">
                             <div class="flex flex-col items-start p-6 gap-4 ">
                                 <div class="flex flex-col item-start gap-2">
-                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 3</h1>
-                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Kecil Telur Puyuh</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil Telur Puyuh 5 pcs</h2>
+                                </div>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 15.000</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
+                            <img class="h-72 object-cover rounded-t-2xl" src="..\assets\img\pentol\pentol4.jpeg" alt="">
+                            <div class="flex flex-col items-start p-6 gap-4 ">
+                                <div class="flex flex-col item-start gap-2">
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Super Pedas</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs Super Pedas</h2>
                                 </div>
                                 <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
@@ -99,11 +123,11 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <img class="h-72 object-cover rounded-t-2xl" src="..\assets\img\pentol\pentol5.jpeg" alt="">
                             <div class="flex flex-col items-start p-6 gap-4 ">
                                 <div class="flex flex-col item-start gap-2">
-                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 4</h1>
-                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Saos</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs dan Saos Pedas</h2>
                                 </div>
                                 <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
                             </div>
@@ -111,49 +135,25 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <img class="h-72 object-cover rounded-t-2xl" src="..\assets\img\pentol\pentol6.jpeg" alt="">
                             <div class="flex flex-col items-start p-6 gap-4 ">
                                 <div class="flex flex-col item-start gap-2">
-                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 5</h1>
-                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Goreng</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Goreng 8 pcs</h2>
                                 </div>
-                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 8.000</h1>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                            <img src="..\assets\img\Rectangle 1.svg" alt="">
+                            <img class="h-72 object-cover rounded-t-2xl" src="..\assets\img\pentol\pentol7.jpeg" alt="">
                             <div class="flex flex-col items-start p-6 gap-4 ">
                                 <div class="flex flex-col item-start gap-2">
-                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 6</h1>
-                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
+                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso Tetelan</h1>
+                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Isi Tetelan</h2>
                                 </div>
-                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                            <img src="..\assets\img\Rectangle 1.svg" alt="">
-                            <div class="flex flex-col items-start p-6 gap-4 ">
-                                <div class="flex flex-col item-start gap-2">
-                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 7</h1>
-                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
-                                </div>
-                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex flex-col bg-neutral-50 shadow-md rounded-2xl">
-                            <img src="..\assets\img\Rectangle 1.svg" alt="">
-                            <div class="flex flex-col items-start p-6 gap-4 ">
-                                <div class="flex flex-col item-start gap-2">
-                                    <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso 8</h1>
-                                    <h2 class="font-work-sans font-normal text-xs text-neutral-600">Bakso Kecil 5 pcs</h2>
-                                </div>
-                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 10.000</h1>
+                                <h1 class="font-work-sans font-semibold text-lg text-primary-500">Rp 25.000</h1>
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
         <h2 class="font-lora font-bold text-4xl ">We Are <span class="text-primary-500">Everywhere</span></h2>
         <div class="flex flex-row items-center gap-6 pt-12">
             <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
-                <img src="..\assets\img\Rectangle 1.svg" alt="">
+                <img class="max-h-56 object-cover rounded-t-2xl" src="..\assets\img\bakso1.jpg" alt="">
                 <div class="flex flex-col items-start p-6">
                     <div class="flex flex-col item-start gap-y-6">
                         <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso President Pulosari</h1>
@@ -201,7 +201,7 @@
                 </div>
             </div>
             <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
-                <img src="..\assets\img\Rectangle 1.svg" alt="">
+                <img class="max-h-56 object-cover rounded-t-2xl" src="..\assets\img\bakso2.jpg" alt="">
                 <div class="flex flex-col items-start p-6">
                     <div class="flex flex-col item-start gap-y-6">
                         <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso President Malang</h1>
@@ -227,7 +227,7 @@
                 </div>
             </div>
             <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
-                <img src="..\assets\img\Rectangle 1.svg" alt="">
+                <img class="max-h-56 object-cover rounded-t-2xl" src="..\assets\img\bakso3.jpg" alt="">
                 <div class="flex flex-col items-start p-6">
                     <div class="flex flex-col item-start gap-y-6">
                         <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso President Malang 1</h1>
@@ -238,7 +238,7 @@
                             </div>
                             <div class="flex flex-row font-normal text-base text-neutral-600 gap-3 items-start justify-start">
                                 <img class="pt-[1px] w-5" src="..\assets\icons\phone.svg" alt="">
-                                <p class="w-[300px]">0341 496 746 / 08990304958(WA) </p>
+                                <p class="w-[300px]">0341 496 746 / 08990304958 (WA) </p>
                             </div>
                             <div class="flex flex-row font-normal text-base text-neutral-600 gap-3 items-start justify-start">
                                 <img class="pt-[1px] w-5" src="..\assets\icons\clock.svg" alt="">
@@ -271,7 +271,7 @@
                                     <div class="flex flex-row gap-2">
                                         <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
                                         <div class="flex flex-col gap-[1px] py-[3px]">
-                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Yogi Puji Sastomo</h1>
                                             <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
                                             <div class="flex flex-row gap-[2px] pt-[2px]">
                                                 <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
@@ -313,7 +313,7 @@
                                     <div class="flex flex-row gap-2">
                                         <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
                                         <div class="flex flex-col gap-[1px] py-[3px]">
-                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Galih Wicaksana</h1>
                                             <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
                                             <div class="flex flex-row gap-[2px] pt-[2px]">
                                                 <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
@@ -334,7 +334,7 @@
                                     <div class="flex flex-row gap-2">
                                         <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
                                         <div class="flex flex-col gap-[1px] py-[3px]">
-                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Canino ALby Darmawan</h1>
                                             <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
                                             <div class="flex flex-row gap-[2px] pt-[2px]">
                                                 <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
@@ -355,7 +355,7 @@
                                     <div class="flex flex-row gap-2">
                                         <img class="flex w-[40px]" src="..\assets\img\person.svg" alt="">
                                         <div class="flex flex-col gap-[1px] py-[3px]">
-                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Anda Bugis</h1>
+                                            <h1 class="font-lora font-semibold text-neutral-900 text-sm">Tengku Muhammad Rafi</h1>
                                             <h2 class="font-normal text-[10px] text-neutral-900">Selebgram</h2>
                                             <div class="flex flex-row gap-[2px] pt-[2px]">
                                                 <img class="w-3" src="..\assets\icons\filled-star.svg" alt="">
