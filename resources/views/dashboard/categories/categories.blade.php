@@ -47,6 +47,7 @@
                                 {{-- <img class="w-8" src="../assets/icons/update-menu.svg" alt=""> --}}
                             </a>
                         </td>
+                        <td class="pl-2">|</td>
                         <td class="pl-2 border-collapse border-primary-500">
                             <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/categories/delete/{{ $category->id }}" data-confirm-delete="true">
                                 Hapus

@@ -36,6 +36,7 @@
                                 {{-- <img class="w-8" src="../assets/icons/update-menu.svg" alt="update"> --}}
                             </a>
                         </td>
+                        <td class="pl-2">|</td>
                         <td class="pl-2 border-collapse border-primary-500">
                             <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/delete/{{ $menu->id }}" data-confirm-delete="true">
                                 Hapus
