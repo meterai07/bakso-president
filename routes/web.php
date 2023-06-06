@@ -42,14 +42,14 @@ Route::prefix('admin')->group(function() {
         Route::post('/menu/create', [MenuController::class, 'store']);
         Route::get('/menu/update/{menu:id}', [MenuController::class, 'edit']);
         Route::post('/menu/update/{menu:id}', [MenuController::class, 'update']);
-        Route::get('/menu/delete/{menu:id}', [MenuController::class, 'destroy']);
+        Route::delete('/menu/delete/{menu:id}', [MenuController::class, 'destroy']);
         
         Route::get('/categories', [CategoryController::class, 'index']);
         Route::get('/categories/create', [CategoryController::class, 'create']);
         Route::post('/categories/create', [CategoryController::class, 'store']);
         Route::get('/categories/update/{category:id}', [CategoryController::class, 'edit']);
         Route::post('/categories/update/{category:id}', [CategoryController::class, 'update']);
-        Route::get('/categories/delete/{category:id}', [CategoryController::class, 'destroy']);
+        Route::delete('/categories/delete/{category:id}', [CategoryController::class, 'destroy']);
 
         Route::get('/order/details/{transaction:id}', [OrderMenuController::class, 'show']);
         Route::get('/order/update/{transaction:id}', [TransactionController::class, 'update']);

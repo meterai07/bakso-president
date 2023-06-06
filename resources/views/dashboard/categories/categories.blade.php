@@ -43,12 +43,14 @@
                         <td class="border p-2  border-collapse border-primary-500">{{ $category->name }}</td>
                         <td class="pl-4 border-collapse border-primary-500">
                             <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/categories/update/{{ $category->id }}">
-                                <img class="w-8" src="../assets/icons/update-menu.svg" alt="">
+                                Update 
+                                {{-- <img class="w-8" src="../assets/icons/update-menu.svg" alt=""> --}}
                             </a>
                         </td>
                         <td class="pl-2 border-collapse border-primary-500">
-                            <a data-confirm-delete="true" class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/categories/update/{{ $category->id }}">
-                                <img class="w-8" src="../assets/icons/delete-menu.svg" alt="">
+                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/categories/delete/{{ $category->id }}" data-confirm-delete="true">
+                                Hapus
+                                {{-- <img class="w-8" src="../assets/icons/delete-menu.svg" alt=""> --}}
                             </a>
                         </td>
                     </tr>

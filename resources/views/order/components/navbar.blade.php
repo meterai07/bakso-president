@@ -23,7 +23,7 @@
                 @endif
                 <div>
                     <p>{{ $menu->name }}</p>
-                    <input type="number" name="{{ $menu->id }}" id="order-quantity-{{ $menu->id }}" value="0" readonly class="outline-none bg-transparent">
+                    <input type="number" name="{{ $menu->id }}" id="order-quantity-{{ $menu->id }}" readonly class="outline-none bg-transparent">
                 </div>
             </div>
             @endforeach

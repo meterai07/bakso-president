@@ -14,6 +14,11 @@ class CategoryController extends Controller
      */
     public function index()
     {
+        $title = "Hapus Kategori!!!";
+        $text = "Apakah anda yakin?";
+
+        confirmDelete($title, $text);
+
         return view('dashboard.categories.categories', [
             'categories' => Category::all(),
         ]);

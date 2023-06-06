@@ -44,7 +44,7 @@ class OrderMenuController extends Controller
             $transaction = Transaction::latest()->first();
 
             foreach (request()->except('_token') as $id => $quantity) {
-                if ($quantity != 0) {
+                if ($quantity != null) {
                     OrderMenu::create([
                         'transaction_id' => $transaction->id,
                         'menu_id' => $id,
