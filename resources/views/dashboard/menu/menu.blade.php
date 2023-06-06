@@ -26,7 +26,7 @@
                     <tr class="">
                         <td class="border p-2  border-collapse border-primary-500">{{ $menu->name }}</td>
                         <td class="border p-2 border-collapse border-primary-500">{{ $menu->category->name }}</td>
-                        <td class="border p-2 border-collapse border-primary-500">{{ $menu->description }}</td>
+                        <td class="border p-2 border-collapse border-primary-500 w-[200px]">{{ $menu->description }}</td>
                         <td class="border p-2 border-collapse border-primary-500">{{ $menu->price }}</td>
                         <td class="border p-2 border-collapse border-primary-500">
                             <img class="ml-auto mr-auto" src="{{ asset('storage/' . $menu->image) }}" alt="{{ $menu->name }}" width="50" height="50">
