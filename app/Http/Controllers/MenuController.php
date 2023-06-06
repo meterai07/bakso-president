@@ -14,7 +14,8 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $menus = Menu::all();
+        // $menus = Menu::all();
+        $menus = Menu::paginate(5);
         $title = "Hapus Menu!!!";
         $text = "Apakah anda yakin?";
 
@@ -22,7 +23,6 @@ class MenuController extends Controller
 
         return view('dashboard.menu.menu', [
             'menus' => $menus,
-            // 'menu   ' => compact('menus'),
         ]);
     }
 

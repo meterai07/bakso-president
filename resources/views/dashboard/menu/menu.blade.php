@@ -36,7 +36,7 @@
                             </a>
                         </td>
                         <td class="pl-2 border-collapse border-primary-500">
-                            <a data-confirm-delete="true" class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/delete/{{ $menu->id }}">
+                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/delete/{{ $menu->id }}" data-confirm-delete="true" >
                                 <img class="w-8" src="../assets/icons/delete-menu.svg" alt="">
                             </a>
                         </td>
@@ -44,10 +44,8 @@
                     @endforeach
                 </tbody>
             </table>
+            {{ $menus->links() }}
             <a href="/admin/menu/create" class="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded mb-4 bg-primary-500 text-neutral-50 text-base">Tambah Menu</a>
         </div>
     </div>
-    
-
-
 @endsection
