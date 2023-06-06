@@ -12,7 +12,7 @@
   <div class="flex items-center justify-center">
     <div class="flex flex-col bg-cover items-center justify-center w-[500px] h-[600px] py-4 gap-4 shadow-lg rounded-[50px]" style="background-image: url(/assets/img/login-bg.svg)">
       <h1 class="text-3xl font-extrabold text-neutral-900 font-lora">Tambah Menu</h1>
-      <form action="/admin/menu/create" method="post" enctype="multipart/form-data" class="w-full max-w-sm mx-auto">
+      <form action="/admin/menu/update/{{ $menu->id }}" method="post" enctype="multipart/form-data" class="w-full max-w-sm mx-auto">
         @csrf
         <div class="mb-4">
           <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nama Menu</label>

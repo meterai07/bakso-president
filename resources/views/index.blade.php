@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Hero -->
-    <div class="absolute items-start justify-start -z-10 opacity-10">
+    <div id="home" class="absolute items-start justify-start -z-10 opacity-10">
         <img class="" src="../assets/img/header-bg.svg" alt="">
     </div>
     <div class="flex flex-row items-center h-[90vh] mx-28 justify-between">
@@ -12,8 +12,8 @@
             <h1 class="font-lora font-bold text-6xl mb-4 tracking-wider leading-tight">Where <span class="text-primary-500">Happiness</span>  and <span class="text-primary-500">Meatballs</span> Collide</h1>
             <h2 class="font-normal text-lg w-[700px] tracking-wider">Lorem ipsum dolor sit amet consectetur. Eget ac mauris morbi elementum placerat vulputate scelerisque nisi et. Duis habitant feugiat leo et cursus nulla mauris.</h2>
             <div class="flex flex-row pt-10">
-            <a class="font-medium text-base  w-36 h-12 bg-primary-500 border border-primary-500 rounded-md text-center py-2 text-neutral-50 hover:bg-primary-600 hover:duration-500" href="">Order Menu</a>
-            <a class="flex flex-row items-center ml-6 font-medium text-base w-fit justify-center py-2 px-5 border border-primary-500 rounded-md text-primary-500 hover:bg-primary-600 hover:duration-500" href="">
+            <a class="font-medium text-base  w-36 h-12 bg-primary-500 border border-primary-500 rounded-md text-center py-2 text-neutral-50 hover:bg-primary-600 hover:duration-500" href="/order">Order Menu</a>
+            <a class="flex flex-row items-center ml-6 font-medium text-base w-fit justify-center py-2 px-5 border border-primary-500 rounded-md text-primary-500 hover:bg-primary-600 hover:duration-500" href="#menus">
                 <p class="h-8 pt-[2px] pr-2">See Menu</p>
                 <img src="../assets/icons/arrow-right.svg" alt="">
             </a>
@@ -27,7 +27,7 @@
     </a>
 
     <!-- about us -->
-    <div id="about-us" class="flex flex-row bg-neutral-700 bg-cover items-center justify-center my-[100px] bg-center gap-20 py-24" style="background-image: url(../assets/img/about-us-frame.svg)">
+    <div id="about" class="flex flex-row bg-neutral-700 bg-cover items-center justify-center my-[100px] bg-center gap-20 py-24" style="background-image: url(../assets/img/about-us-frame.svg)">
         <div>
             <img src="../assets/img/about-us-img.svg" alt="">
         </div>
@@ -54,7 +54,7 @@
         </div>
     </div>
     <!-- Best Seller -->
-    <div class="flex flex-col items-center justify-center gap-6">
+    <div id="menus" class="flex flex-col items-center justify-center gap-6">
         <h1 class="font-lora font-semibold text-2xl text-neutral-900">Menu</h1>
         <h2 class="font-lora font-bold text-4xl ">Our <span class="text-primary-500">Best Seller</span></h2>
         <div class="flex flex-row pt-4 justify-center items-center ">
@@ -161,15 +161,17 @@
             </div>
             <img class="button-next px-6 h-max pb-2 bg-cover" src="../assets/img/next-button.svg" alt="">
         </div>
-        <button class="flex gap-2 justify-center items-center px-5 py-2 border border-primary-500 rounded-lg">
-            <h1 class="font-work-sans font-semibold text-base text-primary-500">See More</h1>
-            <img src="..\assets\img\arrow-right.svg" alt="">
-        </button>
+        <a href="/order">
+            <button class="flex gap-2 justify-center items-center px-5 py-2 border border-primary-500 rounded-lg">
+                <h1 class="font-work-sans font-semibold text-base text-primary-500">See More</h1>
+                <img src="..\assets\img\arrow-right.svg" alt="">
+            </button>
+        </a>
     </div>
 
     <!-- outlets -->
     <div class="flex flex-col bg-cover items-center justify-center my-[100px] bg-center gap-6 py-[80px]" style="background-image: url(../assets/img/outlets-bg.svg)">
-        <h1 class="font-lora font-semibold text-2xl text-neutral-900">Outlets</h1>
+        <h1 id="outlets" class="font-lora font-semibold text-2xl text-neutral-900">Outlets</h1>
         <h2 class="font-lora font-bold text-4xl ">We Are <span class="text-primary-500">Everywhere</span></h2>
         <div class="flex flex-row items-center gap-6 pt-12">
             <div class="flex flex-col bg-neutral-50 shadow-xl rounded-2xl">
@@ -191,7 +193,7 @@
                                 <p class="w-[300px]">08.00 - 21.30 WIB (Setiap Hari) </p>
                             </div>
                         </div>
-                        <a href="" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
+                        <a href="https://goo.gl/maps/HtPMfSG5G1UL1Lc29" target="_blank" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
                             <img src="..\assets\icons\way.svg" alt="">
                             <p class="font-medium text-base text-center text-neutral-50">Petunjuk Arah</p>
                         </a>
@@ -202,7 +204,7 @@
                 <img src="..\assets\img\Rectangle 1.svg" alt="">
                 <div class="flex flex-col items-start p-6">
                     <div class="flex flex-col item-start gap-y-6">
-                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso President Pulosari</h1>
+                        <h1 class="font-lora font-semibold text-xl text-neutral-900">Bakso President Malang</h1>
                         <div class="flex flex-col gap-y-4">
                             <div class="flex flex-row font-normal text-base text-neutral-600 gap-3 items-start justify-start">
                                 <img class="pt-[1px] w-5" src="..\assets\icons\pin.svg" alt="">
@@ -217,7 +219,7 @@
                                 <p class="w-[300px]">08.00 - 21.30 WIB (Setiap Hari) </p>
                             </div>
                         </div>
-                        <a href="" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
+                        <a href="https://goo.gl/maps/QFPPBz2Bk7PKuy317" target="_blank" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
                             <img src="..\assets\icons\way.svg" alt="">
                             <p class="font-medium text-base text-center text-neutral-50">Petunjuk Arah</p>
                         </a>
@@ -232,18 +234,18 @@
                         <div class="flex flex-col gap-y-4">
                             <div class="flex flex-row font-normal text-base text-neutral-600 gap-3 items-start justify-start">
                                 <img class="pt-[1px] w-5" src="..\assets\icons\pin.svg" alt="">
-                                <p class="w-[300px]">Jl. Batanghari No.5, Rampal Celaket, Kec. Klojen, Kota Malang, Jawa Timur 65111</p>
+                                <p class="w-[300px]">Jl. Sunandar Priyo Sudarmo, Purwantoro, Kec. Blimbing, Kota Malang, Jawa Timur 65122</p>
                             </div>
                             <div class="flex flex-row font-normal text-base text-neutral-600 gap-3 items-start justify-start">
                                 <img class="pt-[1px] w-5" src="..\assets\icons\phone.svg" alt="">
-                                <p class="w-[300px]">0341 496 746 / 0812 5545 6020 (WA) </p>
+                                <p class="w-[300px]">0341 496 746 / 08990304958(WA) </p>
                             </div>
                             <div class="flex flex-row font-normal text-base text-neutral-600 gap-3 items-start justify-start">
                                 <img class="pt-[1px] w-5" src="..\assets\icons\clock.svg" alt="">
                                 <p class="w-[300px]">08.00 - 21.30 WIB (Setiap Hari) </p>
                             </div>
                         </div>
-                        <a href="" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
+                        <a href="https://goo.gl/maps/gMDqYxGCVdgCB31h9" target="_blank" class="flex flex-row w-[180px] items-center justify-center bg-contain bg-primary-500 border border-primary-500 rounded-lg py-2 gap-2 hover:bg-primary-600 hover:duration-500">
                             <img src="..\assets\icons\way.svg" alt="">
                             <p class="font-medium text-base text-center text-neutral-50">Petunjuk Arah</p>
                         </a>
@@ -254,7 +256,7 @@
     </div>
 
     <!-- Testimonial -->
-    <div class="flex items-center justify-center p-10">
+    <div id="testimonial" class="flex items-center justify-center p-10">
         <div class="flex flex-col items-center justify-center w-[1223px] gap-6 py-12 rounded-[48px]" style="background-image: url(../assets/img/testimoni-bg.svg)">
             <h1 class="font-lora font-semibold text-2xl text-neutral-900">Testimonial</h1>
             <h2 class="font-lora font-bold text-4xl ">What They Say About <span class="text-neutral-50">Our Recipes</span></h2>
