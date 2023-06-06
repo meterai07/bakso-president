@@ -21,11 +21,11 @@
                     @foreach($categories as $category)
                     <tr>
                         <td class="border p-2  border-collapse border-primary-500">{{ $category->name }}</td>
-                        <td class="flex items-center justify-evenly border border-collapse border-primary-500 gap-2 p-4">
-                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/categories/update/{{ $category->id }}">
+                        <td class="border p-2 border-collapse border-primary-500">
+                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300 mx-8" href="/admin/categories/update/{{ $category->id }}">
                                 Update 
                             </a>
-                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/categories/delete/{{ $category->id }}" data-confirm-delete="true">
+                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300 mx-8" href="/admin/categories/delete/{{ $category->id }}" data-confirm-delete="true">
                                 Hapus
                             </a>
                         </td>

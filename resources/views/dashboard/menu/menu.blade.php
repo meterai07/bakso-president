@@ -23,19 +23,19 @@
                 </thead>
                 <tbody>
                     @foreach ($menus as $menu)
-                    <tr>
+                    <tr class="">
                         <td class="border p-2  border-collapse border-primary-500">{{ $menu->name }}</td>
                         <td class="border p-2 border-collapse border-primary-500">{{ $menu->category->name }}</td>
                         <td class="border p-2 border-collapse border-primary-500">{{ $menu->description }}</td>
                         <td class="border p-2 border-collapse border-primary-500">{{ $menu->price }}</td>
                         <td class="border p-2 border-collapse border-primary-500">
-                            <img src="{{ asset('storage/' . $menu->image) }}" alt="{{ $menu->name }}" width="200">
+                            <img class="ml-auto mr-auto" src="{{ asset('storage/' . $menu->image) }}" alt="{{ $menu->name }}" width="50" height="50">
                         </td>
-                        <td class="flex items-center justify-evenly border border-collapse border-primary-500 gap-2 p-4">
-                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/update/{{ $menu->id }}">
+                        <td class="border p-2 border-collapse border-primary-500">
+                        <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300 mx-8" href="/admin/menu/update/{{ $menu->id }}">
                                 Update 
                             </a>
-                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300" href="/admin/menu/delete/{{ $menu->id }}" data-confirm-delete="true">
+                            <a class="text-base font-semibold text-primary-500 hover:text-primary-300 hover:duration-300 mx-8" href="/admin/menu/delete/{{ $menu->id }}" data-confirm-delete="true">
                                 Hapus
                             </a>
                         </td>

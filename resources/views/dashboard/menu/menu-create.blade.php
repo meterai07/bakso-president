@@ -3,7 +3,7 @@
 @section('title', ' Menu Create')
 
 @section('content')
-<div class="h-screen bg-primary-50">
+<div class="h-max bg-primary-50">
   <a href="/admin/menu" class="flex text-blue-500 hover:text-blue-700 items-center ml-12 pt-4 gap-2 font-semibold w-8">
     <img src="/assets/icons/chevron-left.svg" alt="">
     Kembali
