@@ -11,6 +11,12 @@ class OrderMenu extends Model
 
     protected $table = "order_menus";
 
+    protected $fillable = [
+        'transaction_id',
+        'menu_id',
+        'quantity',
+    ];
+
     public function transaction()
     {
         return $this->belongsTo(Transaction::class);

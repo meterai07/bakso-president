@@ -7,8 +7,7 @@ use App\Models\Category;
 use App\Models\OrderMenu;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
-use App\Http\Requests\StoreOrderMenuRequest;
-use App\Http\Requests\UpdateOrderMenuRequest;
+use Illuminate\Support\Facades\DB;
 
 class OrderMenuController extends Controller
 {
@@ -35,9 +34,27 @@ class OrderMenuController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreOrderMenuRequest $request)
+    public function store(Request $request)
     {
-        //
+        DB::transaction(function () {
+            Transaction::create([
+                'status' => 'pending',
+            ]);
+
+            $transaction = Transaction::latest()->first();
+
+            foreach (request()->except('_token') as $id => $quantity) {
+                if ($quantity != 0) {
+                    OrderMenu::create([
+                        'transaction_id' => $transaction->id,
+                        'menu_id' => $id,
+                        'quantity' => $quantity,
+                    ]);
+                }
+            }
+        });
+
+        return redirect('/order')->with('success', 'Order has been created!');
     }
 
     /**

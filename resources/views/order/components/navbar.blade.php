@@ -11,7 +11,7 @@
 </nav>
 
 <div id="sidebar-popup" class="fixed inset-y-0 right-0 flex items-center justify-center bg-neutral-50 w-0 duration-500 overflow-hidden">
-    <form action="/order/add" method="post" id="form-order" class="flex flex-col gap-4">
+    <form action="/order/create" method="post" id="form-order" class="flex flex-col gap-4">
         @csrf
         <div class="flex flex-col gap-4">
             @foreach($menus as $menu)
@@ -23,7 +23,7 @@
                 @endif
                 <div>
                     <p>{{ $menu->name }}</p>
-                    <input type="number" name="order-quantity" id="order-quantity-{{ $menu->id }}" value="0" readonly class="outline-none bg-transparent">
+                    <input type="number" name="{{ $menu->id }}" id="order-quantity-{{ $menu->id }}" value="0" readonly class="outline-none bg-transparent">
                 </div>
             </div>
             @endforeach

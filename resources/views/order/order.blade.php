@@ -22,7 +22,8 @@
 <script>
 function setOrderQuantity() {
     let quantities = document.getElementsByName('quantity');
-    let orderQuantities = document.getElementsByName('order-quantity');
+    // let orderQuantities = document.getElementsByName('order-quantity');
+    let orderQuantities = document.querySelectorAll('[id^="order-quantity-"]');
     for (let i = 0; i < quantities.length; i++) {
         if (quantities[i].value > 0) {
             orderQuantities[i].parentNode.parentNode.style.display = 'flex';

@@ -13,6 +13,7 @@
     @include('order.components.navbar')
         @yield('order')
     @include('order.components.footer')
+    @include('sweetalert::alert')
 
     <!-- Navigation Bar -->
     <script>

@@ -26,6 +26,7 @@ use App\Http\Controllers\TransactionController;
 Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/order', [OrderMenuController::class, 'index']);
+Route::post('/order/create', [OrderMenuController::class, 'store']);
 
 Route::prefix('admin')->group(function() {
     Route::get('/', [AdminController::class, 'index']);
