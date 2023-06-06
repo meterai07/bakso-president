@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin | Order Details</title>
-    @vite('resources/css/app.css')
-    @vite('resources/js/app.js')
-</head>
-<body>
+@extends('dashboard.layouts.main', ['page' => 'order-menu-details'])
+
+@section('title', 'Dashboard')
+
+@section('content')
+
     <div class="bg-primary-50 bg-cover h-screen">
         <a href="/admin/dashboard" class="flex text-blue-500 hover:text-blue-700 items-center ml-12 pt-4 gap-2 font-semibold w-8">
             <img src="/assets/icons/chevron-left.svg" alt="">
@@ -62,6 +57,4 @@
             </div>
         </div>
     </div>
-    
-</body>
-</html>
+@endsection

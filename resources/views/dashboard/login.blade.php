@@ -1,4 +1,4 @@
-@extends('dashboard.layouts.main')
+@extends('dashboard.layouts.main', ['page' => 'login'])
 
 @section('title', ' Login')
 

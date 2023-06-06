@@ -1,4 +1,4 @@
-@extends('dashboard.layouts.main')
+@extends('dashboard.layouts.main', ['page' => 'categories-create'])
 
 @section('title', ' Create Category')
 

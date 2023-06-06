@@ -1,4 +1,4 @@
-@extends('dashboard.layouts.main')
+@extends('dashboard.layouts.main', ['page' => 'menu-update'])
 
 @section('title', ' Menu Update')
 

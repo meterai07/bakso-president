@@ -1,4 +1,4 @@
-@extends('dashboard.layouts.main')
+@extends('dashboard.layouts.main', ['page' => 'dashboard'])
 
 @section('title', 'Dashboard')
 
@@ -19,7 +19,7 @@
                 </thead>
                 <tbody>
                     @foreach($transactions as $transaction)
-                        @if ($transaction->status == 'pending')
+                        @if ($transaction->status == 'menunggu dibuat')
                         <tr>
                             <td class="border p-2  border-collapse border-primary-500">{{ $transaction->id }}</td>
                             <td class="border p-2 border-collapse border-primary-500">{{ $transaction->status }}</td>

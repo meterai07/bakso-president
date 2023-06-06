@@ -29,14 +29,14 @@ Route::get('/order', [OrderMenuController::class, 'index']);
 Route::post('/order/create', [OrderMenuController::class, 'store']);
 
 Route::prefix('admin')->group(function() {
-    Route::get('/', [AdminController::class, 'index']);
+    Route::get('/', [AdminController::class, 'index'])->middleware('guest');
     Route::post('/', [AdminController::class, 'login']);
-    
+
     Route::middleware(['auth'])->group(function() {
         Route::get('/logout', [AdminController::class, 'logout']);
         
         Route::get('/dashboard', [AdminController::class, 'dashboard']);
-        
+
         Route::get('/menu', [MenuController::class, 'index']);
         Route::get('/menu/create', [MenuController::class, 'create']);
         Route::post('/menu/create', [MenuController::class, 'store']);

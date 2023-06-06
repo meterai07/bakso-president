@@ -9,9 +9,13 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    @include('dashboard.components.navbar')
-    @yield('content')
-    @include('dashboard.components.footer')
+    @if ($page == 'login')
+        @yield('content')
+    @else
+        @include('dashboard.components.navbar')
+        @yield('content')
+        @include('dashboard.components.footer')
+    @endif
     @include('sweetalert::alert')
 </body>
 </html>

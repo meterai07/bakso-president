@@ -13,16 +13,12 @@ class TransactionSeeder extends Seeder
      */
     public function run(): void
     {
-        // Transaction::create([
-        //     'order_menus_id' => 1,
-        // ]);
-
         Transaction::create([
-            'status' => 'pending'
+            'status' => 'menunggu dibuat'
         ]);
 
         Transaction::create([
-            'status' => 'pending'
+            'status' => 'menunggu dibuat'
         ]);
     }
 }

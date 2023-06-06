@@ -57,7 +57,7 @@ class TransactionController extends Controller
     public function update(Request $request, Transaction $transaction)
     {
         $transaction->update([
-            'status' => 'done',
+            'status' => 'selesai',
         ]);
 
         return redirect('/admin/dashboard')->with('success', 'Transaction is successfully updated');

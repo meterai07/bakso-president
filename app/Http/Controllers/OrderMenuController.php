@@ -38,7 +38,7 @@ class OrderMenuController extends Controller
     {
         DB::transaction(function () {
             Transaction::create([
-                'status' => 'pending',
+                'status' => 'menunggu dibuat',
             ]);
 
             $transaction = Transaction::latest()->first();
