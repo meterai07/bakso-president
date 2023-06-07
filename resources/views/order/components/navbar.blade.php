@@ -1,8 +1,5 @@
 <nav id="navbar" class="w-full py-4 px-[100px] flex items-center justify-between duration-500 bg-neutral-50 fixed top-0 z-50">
     <a href="/"><img src="../assets/icons/Logo-Bakso.png" alt="Logo" class="h-12 w-auto"></a> 
-    <div class="flex items-center gap-8">
-        <a href="/" class="text-base font-medium text-neutral-900 hover:text-primary-500 duration-100">Home</a>
-    </div>
     <button class="py-2 px-6" onclick="toggleShow()"><img src="../assets/icons/shopping-cart.svg" alt="" srcset=""></button>
 </nav>
 

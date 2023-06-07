@@ -34,9 +34,14 @@ class AdminController extends Controller
         return redirect('/admin')->with('error', 'Oppes! You have entered invalid credentials');
     }
 
-    public function logout()
+    public function logout(Request $request)
     {
         Auth::logout();
+
+        $request->session()->invalidate();
+ 
+        $request->session()->regenerateToken();
+
         return redirect('/admin');
     }
 }

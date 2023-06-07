@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
-<body>
+<body class="bg-primary-50">
     @if ($page == 'login')
         @yield('content')
     @else
